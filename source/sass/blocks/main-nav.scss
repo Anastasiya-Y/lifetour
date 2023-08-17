@@ -1,19 +1,14 @@
 .main-nav {
   padding-top: 13px;
 
-  @include vp-1199 {
-    padding-top: 0;
+  .is-open & {
+    order: 10;
+    position: static;
+    width: 100%;
   }
 
-  .main-header & {
-    @include vp-1199 {
-      order: -1;
-      position: absolute;
-      top: calc(100% + 30px);
-      left: 0;
-      background-color: $color-default-white;
-      width: 100vw;
-    }
+  @include vp-1199 {
+    padding-top: 0;
   }
 }
 
@@ -26,8 +21,13 @@
 
   .main-header & {
     @include vp-1199 {
+      display: none;
       flex-direction: column;
     }
+  }
+
+  .is-open & {
+    display: block;
   }
 
   .main-footer & {
@@ -118,6 +118,11 @@
       color: $color-elephant;
       font-weight: 700;
       padding: 10px 0;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
     }
   }
 
