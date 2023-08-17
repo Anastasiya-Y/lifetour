@@ -1,0 +1,154 @@
+.main-nav {
+  padding-top: 13px;
+
+  @include vp-1199 {
+    padding-top: 0;
+  }
+
+  .main-header & {
+    @include vp-1199 {
+      order: -1;
+      position: absolute;
+      top: calc(100% + 30px);
+      left: 0;
+      background-color: $color-default-white;
+      width: 100vw;
+    }
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  .main-header & {
+    @include vp-1199 {
+      flex-direction: column;
+    }
+  }
+
+  .main-footer & {
+    @include vp-767 {
+      display: block;
+      column-count: 2;
+      column-gap: 10px;
+    }
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 31px;
+
+  @include vp-1199 {
+    margin-right: 20px;
+  }
+}
+
+.main-nav__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+
+  line-height: 16px;
+  color: inherit;
+
+  transition: all $trans-default;
+
+  user-select: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $color-default-white;
+    opacity: 0;
+
+    transition: all $trans-default;
+  }
+
+  @include hover {
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  .main-header & {
+    @include focus {
+      box-shadow: inset 0 0 0 1px $color-default-white;
+
+      &:active {
+        box-shadow: none;
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include active {
+      box-shadow: none;
+
+      &::before {
+        opacity: 0;
+      }
+    }
+
+    @include vp-1199 {
+      text-transform: uppercase;
+      color: $color-elephant;
+      font-weight: 700;
+      padding: 10px 0;
+    }
+  }
+
+  .main-footer & {
+    &::before {
+      background-color: $color-elephant;
+    }
+
+    @include focus {
+      box-shadow: inset 0 0 0 1px $color-elephant;
+
+      &:active {
+        box-shadow: none;
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include active {
+      box-shadow: none;
+
+      &::before {
+        opacity: 0;
+      }
+    }
+
+    @include vp-1199 {
+      line-height: 14px;
+      font-size: 14px;
+    }
+  }
+}

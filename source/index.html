@@ -21,8 +21,44 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="main-header" data-header>
+        <div class="container">
+          <div class="main-header__wrapper">
+            <button class="main-header__toggle" type="button" aria-label="Открыть меню / Закрыть меню." data-burger>
+              <span class="main-header__toggle-line"></span>
+            </button>
+            <a class="main-header__logo" href="index.html" aria-label="Переход на главную страницу сайта LifeTour.">
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#logotype"></use>
+              </svg>
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">Туры</a>
+                </li>
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">Обучение</a>
+                </li>
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">О&nbsp;нас</a>
+                </li>
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">Отзывы</a>
+                </li>
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">Фотографии</a>
+                </li>
+                <li class="main-nav__item" data-close-menu>
+                  <a class="main-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="main-header__phone-wrapper">
+              <a class="main-header__phone" href="tel:88007253232" aria-label="Позвонить в туристическоую компанию LifeTour.">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
         <section class="intro">
@@ -35,8 +71,69 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__content-wrapper">
+              <a class="main-footer__logo" href="index.html" aria-label="Переход на главную страницу сайта LifeTour.">
+                <svg width="205" height="60">
+                  <use href="img/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Туры</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Обучение</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">О&nbsp;нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Отзывы</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="main-footer__phone-wrapper">
+                <a class="main-footer__phone" href="tel:88007253232" aria-label="Позвонить в туристическоую компанию LifeTour.">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+              </div>
+            </div>
+            <div class="main-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Страница HTML Academy во VKontakte." target="_blank">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Страница HTML Academy в Одноклассниках." target="_blank">
+                    <svg width="9" height="16">
+                      <use href="img/sprite.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" aria-label="Страница HTML Academy на Reddit." target="_blank">
+                    <svg width="14" height="15">
+                      <use href="img/sprite.svg#icon-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="main-footer__copyright">Политика конфиденциальности</p>
+          </div>
+        </div>
       </footer>
     </div>
 

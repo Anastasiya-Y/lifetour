@@ -1,0 +1,165 @@
+.main-header {
+  background-color: tomato;
+  color: $color-default-white;
+  padding: 40px 0;
+
+  &.is-open {
+    position: relative;
+
+    &::before {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba($color-default-black, 0.5);
+      z-index: 10;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 30px 0;
+  }
+}
+
+
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.main-header__toggle {
+  position: relative;
+
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    height: 2px;
+    width: 26px;
+
+    background-color: $color-default-white;
+  }
+
+  &::before {
+    top: 3px;
+  }
+
+  &::after {
+    bottom: 3px;
+  }
+
+  @include vp-1199 {
+    display: block;
+  }
+}
+
+.main-header__toggle-line {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 2px;
+  width: 17px;
+  background-color: $color-default-white;
+}
+
+.main-header__logo {
+  margin-right: 20px;
+
+  @include hover-focus {
+    & svg {
+      fill: $color-resolution-blue;
+    }
+
+    &:active {
+      & svg {
+        fill: $color-navy-blue;
+      }
+    }
+  }
+
+  @include active {
+    & svg {
+      fill: $color-navy-blue;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+
+    pointer-events: none;
+  }
+}
+
+.main-header__logo svg {
+  fill: $color-default-white;
+
+  transition: all $trans-default;
+
+  @include vp-1199 {
+    width: 144px;
+    height: 44px;
+  }
+}
+
+.main-header__phone-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  align-items: start;
+  margin-left: 20px;
+  padding-top: 14px;
+}
+
+.main-header__phone {
+  padding: 10px 0;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: inherit;
+
+  transition: all $trans-default;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    &:active {
+      color: $color-navy-blue;
+    }
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+
+    pointer-events: none;
+  }
+}
