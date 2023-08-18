@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {initVideo} from './modules/video/init-video';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/burger/burger';
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const burger = new Burger();
     burger.init();
+    initVideo();
   });
 });
 
