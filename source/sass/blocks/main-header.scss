@@ -1,11 +1,11 @@
 .main-header {
-  background-color: tomato;
   color: $color-default-white;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   padding: 40px 0;
+  z-index: 2;
 
   &.is-open {
     background-color: rgba($color-default-black, 0.5);

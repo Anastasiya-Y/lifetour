@@ -7,12 +7,18 @@
   background-color: $color-navy-blue;
   border: none;
   cursor: pointer;
+  align-items: center;
 
-  transition: opacity $trans-default;
+  transition: all $trans-default;
+  justify-content: center;
 
   /*&--red {
     //background-color: $color-torch-red;
   }*/
+
+  &:focus-visible {
+    outline: none;
+  }
 
   &:disabled {
     background-color: rgba($color-navy-blue, 0.1);
