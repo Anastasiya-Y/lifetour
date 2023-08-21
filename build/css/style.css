@@ -2095,8 +2095,38 @@ button,
   color: #15ab07;
 }
 
+.hero {
+  overflow: hidden;
+}
+
 .hero__container {
   position: relative;
+}
+.hero__container .hero__pagination {
+  position: absolute;
+  top: -109px;
+  right: 20px;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  left: auto;
+}
+@media (max-width: 1199px) {
+  .hero__container .hero__pagination {
+    top: -100px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+}
+@media (max-width: 767px) {
+  .hero__container .hero__pagination {
+    top: -47px;
+  }
 }
 
 .hero__content-wrapper {
@@ -2116,7 +2146,7 @@ button,
 }
 @media (max-width: 767px) {
   .hero__slide {
-    padding: 140px 0 219px 0;
+    padding: 140px 0 151px 0;
   }
 }
 
@@ -2137,6 +2167,11 @@ button,
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100vw;
+}
+
+.hero__image-wrapper img {
+  width: 100%;
 }
 
 .hero__slide-wrapper {
@@ -2218,6 +2253,7 @@ button,
   .hero__link {
     width: 62%;
     min-height: 52px;
+    margin: 0 auto;
   }
 }
 
@@ -2436,31 +2472,41 @@ button,
   }
 }
 
-.hero__pagination {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 60px;
-  height: 10px;
+.hero___pagination-wrapper {
+  width: 100%;
+  position: relative;
+  min-width: 320px;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 1199px) {
+  .hero___pagination-wrapper {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 767px) {
+  .hero___pagination-wrapper {
+    padding: 0 15px;
+  }
 }
 
 .hero__bullet {
-  display: block;
   width: 10px;
   height: 10px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #ffffff;
   border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 767px) {
+  .hero__bullet {
+    width: 8px;
+    height: 8px;
+  }
 }
 @media (hover: hover) {
   .hero__bullet:hover:not(.focus-visible) {
@@ -2484,49 +2530,16 @@ button,
 .hero__bullet:not(:last-child) {
   margin-right: 15px;
 }
+@media (max-width: 767px) {
+  .hero__bullet:not(:last-child) {
+    margin-right: 12px;
+  }
+}
 
 .hero__bullet--active {
   background-color: #ffffff;
 }
 
-/*.hero__pagination {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero__bullet {
-  display: block;
-  width: 10px;
-  height: 10px;
-
-  background-color: $color-transparent;
-  box-shadow: inset 0 0 0 1px $color-default-white;
-  border: none;
-  border-radius: 50%;
-}
-
-.hero__bullet:not(:last-child) {
-  margin-right: 15px;
-}
-
-/*.hero__bullet:hover,
-.hero__bullet:focus {
-  background-color: rgba($color-slate-blue, 0.25);
-}
-
-.hero__bullet:active {
-  background-color: $color-slate-blue;
-}
-
-.hero__bullet--active {
-  background-color: $color-slate-blue;
-}*/
 .main-footer {
   background-color: tomato;
   padding: 31px 0 30px 0;
@@ -2775,6 +2788,7 @@ button,
   cursor: pointer;
   display: none;
   position: relative;
+  padding: 12px 0 0 0;
 }
 @media (max-width: 1199px) {
   .main-header__toggle {
@@ -2887,12 +2901,12 @@ button,
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  gap: 5px;
+  gap: 15px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   margin-left: 20px;
-  padding-top: 14px;
+  padding-top: 23px;
 }
 @media (max-width: 767px) {
   .main-header__phone-wrapper {
@@ -2910,7 +2924,6 @@ button,
 }
 
 .main-header__phone {
-  padding: 10px 0;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
@@ -2959,7 +2972,7 @@ button,
 }
 
 .main-nav {
-  padding-top: 13px;
+  padding-top: 20px;
 }
 .is-open .main-nav {
   -webkit-box-ordinal-group: 11;
@@ -3009,7 +3022,7 @@ button,
 }
 
 .main-nav__item:not(:last-child) {
-  margin-right: 31px;
+  margin: 0 22px 22px 0;
 }
 @media (max-width: 1199px) {
   .main-nav__item:not(:last-child) {

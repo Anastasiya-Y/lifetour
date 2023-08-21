@@ -1,5 +1,5 @@
 .main-nav {
-  padding-top: 13px;
+  padding-top: 20px;
 
   .is-open & {
     order: 10;
@@ -40,7 +40,7 @@
 }
 
 .main-nav__item:not(:last-child) {
-  margin-right: 31px;
+  margin: 0 22px 22px 0;
 
   @include vp-1199 {
     margin-right: 20px;
