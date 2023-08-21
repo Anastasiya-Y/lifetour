@@ -2772,7 +2772,7 @@ button,
     margin: -15px 0 0 -15px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .main-header__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2782,17 +2782,33 @@ button,
 .main-header__toggle {
   width: 26px;
   height: 26px;
-  margin-right: 10px;
+  margin: 9px 10px 0 0;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
   display: none;
   position: relative;
-  padding: 12px 0 0 0;
+  padding: 0;
+}
+.is-open .main-header__toggle {
+  margin-left: 2px;
 }
 @media (max-width: 1199px) {
   .main-header__toggle {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 767px) {
+  .main-header__toggle {
+    margin-top: 0;
+  }
+  .is-open .main-header__toggle {
+    margin: -2px 0 0 2px;
   }
 }
 
@@ -2869,9 +2885,14 @@ button,
   opacity: 0.1;
   pointer-events: none;
 }
+@media (max-width: 1199px) {
+  .main-header__logo {
+    margin: 0 20px 0 129px;
+  }
+}
 @media (max-width: 767px) {
   .main-header__logo {
-    margin: 0 0 0 auto;
+    margin: 0 0 0 20px;
   }
 }
 
@@ -2908,6 +2929,11 @@ button,
   margin-left: 20px;
   padding-top: 23px;
 }
+@media (max-width: 1199px) {
+  .main-header__phone-wrapper {
+    padding-top: 17px;
+  }
+}
 @media (max-width: 767px) {
   .main-header__phone-wrapper {
     width: 100%;
@@ -2919,7 +2945,7 @@ button,
     grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
     margin: 0;
-    padding-top: 6px;
+    padding: 0;
   }
 }
 
@@ -2980,10 +3006,12 @@ button,
           order: 10;
   position: static;
   width: 100%;
+  display: block;
 }
 @media (max-width: 1199px) {
   .main-nav {
     padding-top: 0;
+    display: none;
   }
 }
 
@@ -3008,6 +3036,12 @@ button,
 }
 .is-open .main-nav__list {
   display: block;
+  padding: 31px 0 26px 0;
+}
+@media (max-width: 767px) {
+  .is-open .main-nav__list {
+    padding-top: 16px;
+  }
 }
 @media (max-width: 767px) {
   .main-footer .main-nav__list {
@@ -3026,7 +3060,7 @@ button,
 }
 @media (max-width: 1199px) {
   .main-nav__item:not(:last-child) {
-    margin-right: 20px;
+    margin: 0;
   }
 }
 
@@ -3098,13 +3132,15 @@ button,
     text-transform: uppercase;
     color: #2d383f;
     font-weight: 700;
-    padding: 10px 0;
+    padding: 13px 0;
+    letter-spacing: 0.04em;
   }
 }
 @media (max-width: 767px) {
   .main-header .main-nav__link {
     font-size: 14px;
     line-height: 14px;
+    padding: 12px 0 10px 0;
   }
 }
 .main-footer .main-nav__link::before {
