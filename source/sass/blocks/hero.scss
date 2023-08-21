@@ -155,7 +155,7 @@
 }
 
 .hero__info {
-  padding: 14px 20px;
+  padding: 13px 19px;
   border: 1px solid $color-default-white;
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -167,7 +167,7 @@
 }
 
 .hero__info:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .hero__video-wrapper {
