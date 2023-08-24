@@ -102,7 +102,7 @@
 }
 
 .train h3 {
-  margin: 0 90px 44px 0;
+  margin: 0 90px 43px 0;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -116,6 +116,14 @@
   @include vp-767 {
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+.train__instructors h3 {
+  margin: 0 90px 43px 0;
+
+  @include vp-1199 {
+    margin-bottom: 34px;
   }
 }
 
@@ -290,6 +298,14 @@
   transform: scale(-1, 1);
 }
 
+.train__learning h3 {
+  margin: 0 0 43px 0;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+  }
+}
+
 .train__learning-list {
   margin: 0;
   padding: 0 0 32px 0;
@@ -313,6 +329,7 @@
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 55px;
   }
 
   @include vp-767 {
@@ -329,7 +346,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: -38px;
+    bottom: -40px;
     left: 0;
 
     width: 14px;
@@ -342,13 +359,27 @@
 
 .train__learning-item svg {
   flex-shrink: 0;
-  margin-right: 15px;
+  margin: 12px 15px 0 0;
+
+  @include vp-1199 {
+    margin-top: 8px;
+  }
 
   @include vp-767 {
-    margin-right: 12px;
+    margin-right: 15px;
   }
 }
 
 .train__learning-item p {
   margin: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
