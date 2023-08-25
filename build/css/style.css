@@ -3430,6 +3430,8 @@ button,
   position: static;
   width: 100%;
   display: block;
+  overflow: auto;
+  max-height: 100vh;
 }
 @media (max-width: 1199px) {
   .main-nav {
@@ -3460,6 +3462,7 @@ button,
 .is-open .main-nav__list {
   display: block;
   padding: 31px 0 26px 0;
+  overflow: scroll;
 }
 @media (max-width: 767px) {
   .is-open .main-nav__list {
@@ -4455,7 +4458,6 @@ button,
 
 .train__instructors {
   width: 1200px;
-  overflow: hidden;
   margin-bottom: 49px;
 }
 @media (max-width: 1199px) {
@@ -4513,6 +4515,7 @@ button,
   padding: 20px;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
           box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  max-width: 278px;
 }
 
 .train__image-wrapper {
@@ -4629,7 +4632,7 @@ button,
 
 .train__buttons {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;

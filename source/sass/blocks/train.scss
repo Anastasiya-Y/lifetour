@@ -77,7 +77,6 @@
 
 .train__instructors {
   width: 1200px;
-  overflow: hidden;
   margin-bottom: 49px;
 
   @include vp-1199 {
@@ -129,6 +128,7 @@
 .train__slide {
   padding: 20px;
   box-shadow: 0px 0px 30px 0px rgba($color-resolution-blue, 0.10);
+  max-width: 278px;
 }
 
 .train__image-wrapper {
@@ -223,7 +223,7 @@
 
 .train__buttons {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
   display: flex;
   background-color: $color-default-white;

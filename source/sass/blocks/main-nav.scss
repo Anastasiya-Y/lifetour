@@ -6,6 +6,8 @@
     position: static;
     width: 100%;
     display: block;
+    overflow: auto;
+    max-height: 100vh;
   }
 
   @include vp-1199 {
@@ -31,6 +33,7 @@
   .is-open & {
     display: block;
     padding: 31px 0 26px 0;
+    overflow: scroll;
   }
 
   @include vp-767 {
