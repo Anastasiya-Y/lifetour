@@ -47,24 +47,25 @@
 }
 
 .main-header__toggle {
-  width: 26px;
-  height: 26px;
-  margin: 9px 10px 0 0;
+  width: 36px;
+  height: 36px;
+  margin: 4px 6px 0px -5px;
+  padding: 5px;
 
   background-color: $color-transparent;
   border: none;
   cursor: pointer;
   display: none;
   position: relative;
-  padding: 0;
 
   .is-open & {
-    margin-left: 2px;
+    margin: 4px 8px 0px -7px;
   }
 
   @include vp-1199 {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   @include vp-767 {
@@ -76,22 +77,33 @@
   }
 }
 
-/*.main-header__toggle .main-header__button-open,
-.main-header__toggle .main-header__button-close {
+.main-header__toggle {
   @include hover-focus {
-    fill: $color-resolution-blue;
+    svg {
+      fill: $color-resolution-blue;
+    }
 
     &:active {
-      fill: $color-navy-blue;
+      svg {
+        fill: $color-navy-blue;
+      }
     }
   }
 
   @include active {
-    fill: $color-navy-blue;
+    svg {
+      fill: $color-navy-blue;
+    }
   }
 
   &:focus-visible {
-    outline: none;
+    outline: 1px solid $color-resolution-blue;
+
+    color: $color-resolution-blue;
+
+    svg {
+      fill: $color-resolution-blue;
+    }
   }
 
   &:disabled {
@@ -99,12 +111,13 @@
 
     pointer-events: none;
   }
-}*/
+}
 
 .main-header__button-open {
   display: block;
   fill: $color-default-white;
   transition: all $trans-default;
+  flex-shrink: 0;
 
   .is-open & {
     display: none;
@@ -114,8 +127,6 @@
 .main-header__button-close {
   display: none;
   fill: $color-elephant;
-  top: -26px;
-  left: 0;
   transition: all $trans-default;
 
   .is-open & {
