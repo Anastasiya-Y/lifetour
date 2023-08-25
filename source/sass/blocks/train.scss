@@ -54,7 +54,6 @@
 
       font-size: 26px;
       line-height: 26px;
-      //width: 256px;
     }
   }
 }
@@ -299,10 +298,14 @@
 }
 
 .train__learning h3 {
-  margin: 0 0 43px 0;
+  margin: 0;
 
   @include vp-1199 {
     margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 28px 4px;
   }
 }
 
@@ -313,27 +316,20 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -100vw;
-
-    width: 200vw;
-    height: 1px;
-
-    background-color: rgba($color-navy-blue, 0.2);
-  }
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 55px;
+    row-gap: 91px;
+
+    &::before {
+      display: none;
+    }
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    row-gap: 25px;
+    padding: 0 26px 0 0;
   }
 }
 
@@ -342,6 +338,7 @@
   align-items: flex-start;
 
   position: relative;
+  padding-top: 41px;
 
   &::before {
     content: "";
@@ -355,18 +352,272 @@
 
     background-color: $color-navy-blue;
   }
+
+  @include vp-1199 {
+    padding: 0 50px 0 0;
+
+    &::before {
+      bottom: -24px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 0 0 0 37px;
+
+    & svg {
+      width: 19px;
+      height: auto;
+    }
+
+    &::before {
+      width: 13px;
+      height: 13px;
+      bottom: auto;
+      top: 13px;
+      left: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 10px;
+      width: 1px;
+      height: calc(100% + 25px);
+
+      background-color: rgba($color-navy-blue, 0.2);
+    }
+  }
+}
+
+.train__learning-item--nature {
+  @include vp-1199 {
+    grid-column: 2 / 3;
+    padding-right: 57px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+    padding-right: 0;
+
+    & svg {
+      width: 19px;
+      height: 22px;
+    }
+
+    &::after {
+      display: block;
+    }
+  }
+}
+
+.train__learning-item--mountains {
+  @include vp-1199 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+
+      width: calc(100% + 30px);
+      height: 1px;
+
+      background-color: rgba($color-navy-blue, 0.2);
+    }
+  }
+
+  @include vp-767 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+}
+
+.train__learning-item:nth-child(4n+1) {
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -100vw;
+
+    width: 200vw;
+    height: 1px;
+
+    background-color: rgba($color-navy-blue, 0.2);
+  }
+
+  & svg {
+    margin-top: 8px;
+  }
+
+  @include vp-1199 {
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -17px;
+      left: 0;
+
+      width: calc(100% + 30px);
+      height: 1px;
+
+      background-color: rgba($color-navy-blue, 0.2);
+    }
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+
+    & svg {
+      margin-top: 7px;
+    }
+
+    &::after {
+      top: 19px;
+      left: 10px;
+      width: 1px;
+      height: calc(100% + 25px);
+      bottom: auto;
+    }
+  }
+}
+
+.train__learning-item:nth-child(4n+2) {
+
+  & svg {
+    margin-top: 9px;
+  }
+
+  @include vp-1199 {
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 25px);
+      left: 6px;
+
+      width: 1px;
+      height: 48px;
+
+      background-color: rgba($color-navy-blue, 0.2);
+    }
+  }
+
+  @include vp-767 {
+    & svg {
+      margin-top: 8px;
+    }
+
+    &::after {
+      top: 19px;
+      left: 10px;
+      height: calc(100% + 25px);
+    }
+  }
+}
+
+.train__learning-item:nth-child(4n+3) {
+
+  & svg {
+    margin-top: 9px;
+  }
+
+  @include vp-1199 {
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+
+      width: calc(100% + 36px);
+      height: 1px;
+
+      background-color: rgba($color-navy-blue, 0.2);
+    }
+
+    &::before {
+      top: -27px;
+    }
+  }
+
+  @include vp-767 {
+
+    & svg {
+      margin-top: 6px;
+    }
+
+    &::before {
+      top: 13px;
+    }
+
+    &::after {
+      top: 19px;
+      left: 10px;
+      width: 1px;
+      height: calc(100% + 25px);
+    }
+  }
+}
+
+.train__learning-item:nth-child(4n+4) {
+
+  & svg {
+    margin: 8px 15px 0 1px;
+  }
+
+  @include vp-1199 {
+
+    &::before {
+      top: -27px;
+    }
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+
+    & svg {
+      margin: 7px 12px 0 1px;
+    }
+
+    &::before {
+      top: 13px;
+    }
+
+    &::after {
+      top: 19px;
+      left: 10px;
+      width: 1px;
+      height: calc(100% + 25px);
+    }
+  }
+}
+
+.train__learning-item:last-child {
+  @include vp-767 {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .train__learning-item svg {
   flex-shrink: 0;
-  margin: 12px 15px 0 0;
+  margin: 0 15px 0 0;
 
   @include vp-1199 {
     margin-top: 8px;
+    flex-shrink: 0;
   }
 
   @include vp-767 {
-    margin-right: 15px;
+    margin-right: 12px;
   }
 }
 
