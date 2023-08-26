@@ -17,6 +17,7 @@ const initSwiper = () => {
     centeredSlides: true,
     loop: true,
     speed: 300,
+    cssMode: true,
   });
 
   const swiperTours = new Swiper(swiperContainerTours, {
