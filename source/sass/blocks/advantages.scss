@@ -1,37 +1,28 @@
-.feedback {
-  padding: 30px 0;
-
-  @include vp-1199 {
-    padding: 70px 0;
-  }
-
-  @include vp-767 {
-    padding: 60px 0;
-  }
-}
-
-.feedback__wrapper {
+.advantages {
+  padding: 100px 0;
   position: relative;
 }
 
-.feedback__wrapper h2 {
+.advantages h2 {
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  margin: 0 90px 30px 0;
+  margin: 0 0 47px 0;
+  text-align: center;
   position: relative;
 
   &::before {
-    content: "Отзывы";
+    content: "Преимущества";
     position: absolute;
     top: -17px;
-    left: 0;
+    left: 50%;
 
     font-size: 55px;
     font-weight: 800;
     line-height: 55px;
 
     color: rgba($color-elephant, 0.03);
+    transform: translate(-50%);
   }
 
   @include vp-1199 {
@@ -49,7 +40,7 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 
     &::before {
       top: -4px;
@@ -60,112 +51,106 @@
   }
 }
 
-.feedback__content-wrapper {
-  margin: 0;
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__content-wrapper {
+  margin: 0 0 50px 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    gap: 17px;
+  }
 }
 
-.feedback__slide {
-  padding: 20px 40px 20px 20px;
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 30px;
-  box-shadow: 0px 0px 30px 0px rgba($color-resolution-blue, 0.1);
+.advantages__slide {
+  max-width: 380px;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid rgba($color-navy-blue, 0.1);
   height: auto;
+  background-color: $color-default-white;
 
   @include vp-1199 {
-    padding: 20px 30px 20px 20px;
+    max-width: 324px;
+    padding: 29px 20px;
   }
 
   @include vp-767 {
-    padding: 20px;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    max-width: none;
+    padding: 18px 10px;
   }
 }
 
-.feedback__image-wrapper img {
+.advantages__slide svg {
+  flex-shrink: 0;
+  margin: 0 auto 22px auto;
+
   @include vp-1199 {
-    width: 186px;
-    height: 237px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 19px;
   }
 
   @include vp-767 {
-    width: 100%;
-    height: auto;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 18px;
   }
 }
 
-.feedback__info-wrapper {
-  padding: 16px 0;
+.advantages__slide h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
 
   @include vp-1199 {
-    padding: 4.5px 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
   }
 
   @include vp-767 {
-    padding: 0;
-  }
-}
-
-.feedback__info-wrapper p {
-  font-size: 14px;
-  line-height: 22px;
-  margin: 0 0 8px 0;
-
-  @include vp-1199 {
-    font-size: 12px;
-    line-height: 18px;
-    margin-bottom: 25px;
-  }
-
-  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
     margin-bottom: 15px;
   }
 }
 
-.feedback__info-wrapper h3 {
-  margin: 26px 0 8px 0;
-  font-size: 13px;
-  line-height: 13px;
-  font-weight: 700;
+.advantages__slide p {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
 
   @include vp-1199 {
-    margin-bottom: 6px;
     font-size: 12px;
     line-height: 18px;
   }
-
-  @include vp-767 {
-    margin-bottom: 8px;
-    line-height: 12px;
-  }
 }
 
-.feedback__info-wrapper span {
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 300;
-}
-
-.feedback__buttons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
+.advantages__buttons {
+  display: inline-flex;
   background-color: $color-default-white;
 
   @include vp-1199 {
-    top: -5px;
-  }
-
-  @include vp-767 {
-    top: 2px;
+    display: none;
   }
 }
 
-.feedback__button {
+.advantages__button {
   padding: 5px;
   border: none;
   display: flex;
@@ -213,14 +198,33 @@
   }
 }
 
-.feedback__button svg {
+.advantages__button svg {
   fill: $color-default-white;
 }
 
-.feedback__button--prev {
+.advantages__button--prev {
   margin-right: 4px;
 }
 
-.feedback__button--next svg {
+.advantages__button--next svg {
   transform: scale(-1, 1);
+}
+
+.advantages__background-wrapper {
+  position: absolute;
+  z-index: -1;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.advantages__background-wrapper--left {
+  left: 0;
+  top: -141px;
+}
+
+.advantages__background-wrapper--right {
+  right: 0;
+  top: 44px;
 }
