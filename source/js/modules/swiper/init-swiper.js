@@ -2,6 +2,7 @@ const swiperContainerHero = document.querySelector('.hero__container');
 const swiperContainerTours = document.querySelector('.tours__container');
 const swiperContainerTrain = document.querySelector('.train__container');
 const swiperContainerFeedback = document.querySelector('.feedback__container');
+const swiperContainerGallery = document.querySelector('.gallery__container');
 
 const initSwiper = () => {
   const swiperHero = new Swiper(swiperContainerHero, {
@@ -82,6 +83,23 @@ const initSwiper = () => {
       1200: {
         slidesPerView: 1.5,
         spaceBetween: 30,
+      },
+    },
+  });
+
+  const swiperGallery = new Swiper(swiperContainerGallery, {
+    navigation: {
+      nextEl: '.gallery__button--next',
+      prevEl: '.gallery__button--prev',
+    },
+    simulateTouch: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 'auto',
+        spaceBetween: 3,
+      },
+      768: {
+        spaceBetween: 5,
       },
     },
   });
