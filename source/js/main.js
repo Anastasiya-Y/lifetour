@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {checkBreakpoint} from './modules/swiper/init-swiper-advantages';
 import {initSwiper} from './modules/swiper/init-swiper';
 import {initVideo} from './modules/video/init-video';
+import {createMap} from './modules/map/map';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/burger/burger';
 
@@ -30,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideo();
     initSwiper();
     checkBreakpoint();
+    createMap();
   });
 });
 

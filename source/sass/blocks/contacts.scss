@@ -1,0 +1,298 @@
+.contacts {
+  padding: 83px 0 104px 0;
+
+  @include vp-1199 {
+    padding: 70px 0;
+  }
+
+  @include vp-767 {
+    padding: 60px 0 30px 0;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: auto 585px;
+  gap: 132px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}
+
+.contacts__content-wrapper {
+  max-width: 483px;
+
+  @include vp-1199 {
+    max-width: none;
+  }
+}
+
+.contacts__content-wrapper h2 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  margin: 0 0 24px 0;
+  position: relative;
+
+  &::before {
+    content: "Контакты";
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+
+    color: rgba($color-elephant, 0.03);
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 18px;
+
+    &::before {
+      top: -13px;
+
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 11px;
+
+    &::before {
+      top: -4px;
+
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.contacts__content-wrapper p {
+  margin: 0 0 48px 0;
+  max-width: 490px;
+
+  @include vp-1199 {
+    margin-bottom: 39px;
+    max-width: 484px;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 2px 30px 0;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 34px;
+
+  @include vp-1199 {
+    grid-template-columns: repeat(3, auto);
+    gap: 42px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
+
+.contacts__item {
+  display: grid;
+  grid-template-columns: 26px auto;
+  gap: 30px;
+  align-items: start;
+
+  @include vp-1199 {
+    gap: 8px;
+  }
+
+  @include vp-767 {
+    gap: 6px;
+  }
+}
+
+.contacts__image-wrapper svg {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 12px;
+
+  @include vp-1199 {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+  }
+
+  @include vp-1199 {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.contacts__text-wrapper {
+  @include vp-1199 {
+    margin-top: 1px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+  }
+}
+
+.contacts__text-wrapper h3 {
+  margin: 0 0 9px 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+
+  @include vp-1199 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.contacts__tel,
+.contacts__email {
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    &:active {
+      color: $color-navy-blue;
+    }
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+
+    pointer-events: none;
+  }
+}
+
+.contacts__tel,
+.contacts__email,
+.contacts__address {
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    line-height: 20px;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  display: block;
+
+  @include vp-767 {
+    margin: 8px 70px 0 0;
+  }
+}
+
+
+.contacts__map {
+  height: 324px;
+  width: 100%;
+  align-self: end;
+
+  @include vp-1199 {
+    min-height: 340px;
+    height: 44.3vw;
+  }
+
+  @include vp-767 {
+    min-height: 320px;
+    height: 100vw;
+  }
+}
+
+.contacts__background-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: $color-solitude;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 57.5%;
+    left: 60%;
+
+    width: 33px;
+    height: 44px;
+
+    background-color: $color-transparent;
+    background-image: url("../img/svg/icon-marker.svg");
+    background-repeat: no-repeat;
+  }
+
+  @include vp-1199 {
+    min-height: 340px;
+
+    &::before {
+      width: 29px;
+      height: 38px;
+      background-size: 100%;
+      top: 54%;
+      left: 58.7%;
+    }
+  }
+
+  @include vp-767 {
+    min-height: 320px;
+
+    &::before {
+      width: 20px;
+      height: 26px;
+      top: 57.5%;
+      left: 70.9%;
+    }
+  }
+}
+
+.contacts__background-wrapper img {
+  @include vp-1199 {
+    object-fit: cover;
+    width: 100%;
+    height: 44.3vw;
+  }
+
+  @include vp-767 {
+    height: 100vw;
+  }
+}
