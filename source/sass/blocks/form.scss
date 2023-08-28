@@ -1,13 +1,13 @@
 .form {
   position: relative;
-  padding: 308px 0 307px 0;
+  padding: 21.67% 0 21.32% 0;
 
   @include vp-1199 {
-    padding: 192px 0 183px 0;
+    padding: 25.41% 0 21.32% 0;
   }
 
   @include vp-767 {
-    padding: 181px 0 175px 0;
+    padding: 56.8% 0 175px 0;
   }
 }
 
@@ -18,7 +18,10 @@
   color: $color-default-white;
 
   @include vp-1199 {
-    max-width: 295px;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @include vp-767 {
@@ -27,43 +30,196 @@
 }
 
 .form__wrapper h2 {
-  margin: 0 0 20px 0;
+  margin: 0 18px 17px 0px;
 
   font-weight: 800;
   font-size: 35px;
   line-height: 35px;
 
   @include vp-1199 {
-    margin-bottom: 15px;
+    margin: 0 0 19px 0;
 
     font-size: 25px;
     line-height: 25px;
+    max-width: 300px;
   }
 
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
   }
 }
 
 .form__wrapper p {
-  margin: 0 0 42px 0;
+  margin: 0 18px 41px 0px;
 
   @include vp-1199 {
-    margin-bottom: 30px;
+    margin: 0 3px 29px 0px;
+    max-width: 300px;
   }
 
   @include vp-767 {
-    margin-bottom: 26px;
+    margin: 0 0 26px 0px;
 
     font-size: 12px;
     line-height: 18px;
   }
 }
 
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: 1fr 238px;
+  gap: 30px;
 
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.form__container {
+  width: 39.3%;
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.form__fields {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  align-items: start;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+
+  /*
+  @include vp-767 {
+    margin-bottom: 37px;
+
+    gap: 31px;
+    grid-template-columns: 1fr;
+  }*/
+}
+
+.form__field-wrapper {
+  position: relative;
+
+  &.is-invalid input {
+    border-color: $color-torch-red;
+  }
+}
+
+.input-message {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+
+  font-size: 14px;
+  line-height: 22px;
+
+  &.is-invalid {
+    color: $color-torch-red;
+  }
+}
+
+.form__field-wrapper input {
+  display: flex;
+  width: 340px;
+  padding: 22px 30px 21px 29px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: $ff-montserrat;
+  color: $color-elephant;
+
+  background-color: $color-default-white;
+  border: 1px solid rgba($color-navy-blue, 0.1);
+
+  transition: all $trans-default;
+
+  user-select: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $ff-montserrat;
+    color: rgba($color-elephant, 0.5);
+    transition: all $trans-default;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  @include hover {
+    border-color: $color-navy-blue;
+
+    &::placeholder {
+      color: $color-navy-blue;
+    }
+  }
+
+  @include focus {
+    border-color: $color-resolution-blue;
+
+    &:active {
+      border-color: $color-resolution-blue;
+    }
+  }
+
+  @include active {
+    border-color: $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    &::placeholder {
+      color: rgba($color-navy-blue, 0.1);
+    }
+  }
+}
+
+.form__button {
+  padding: 23px 9px 21px 9px;
+  line-height: 16px;
+  font-weight: 500;
+
+  @include vp-1199 {
+    padding: 22px 9px 20px 9px;
+  }
+
+  @include vp-767 {
+    padding: 19px 9px 17px 9px;
+  }
+}
 
 .form__background-wrapper {
   background-color: $color-killarney;
