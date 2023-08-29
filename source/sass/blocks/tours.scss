@@ -22,7 +22,6 @@
   font-weight: 800;
   line-height: 35px;
   margin: 0 90px 54px 0;
-  max-width: 1000px;
   position: relative;
 
   &::before {
@@ -563,7 +562,7 @@
 }
 
 .tours__link span {
-  margin-right: 1px;
+  margin: 0px 12px 0 0;
 
   @include vp-1199 {
     margin: 0 9px 0 5px;
