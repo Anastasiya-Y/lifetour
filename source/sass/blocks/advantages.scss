@@ -1,6 +1,10 @@
 .advantages {
-  padding: 100px 0;
+  padding: 106px 0 100px 0;
   position: relative;
+
+  @include vp-1199 {
+    padding: 53px 0 100px 0;
+  }
 }
 
 .advantages h2 {
@@ -77,7 +81,7 @@
 
 .advantages__slide {
   max-width: 380px;
-  padding: 40px 20px;
+  padding: 39px 21px 40px 21px;
   text-align: center;
   border: 1px solid rgba($color-navy-blue, 0.1);
   height: auto;
@@ -221,10 +225,10 @@
 
 .advantages__background-wrapper--left {
   left: 0;
-  top: -141px;
+  top: -135px;
 }
 
 .advantages__background-wrapper--right {
   right: 0;
-  top: 44px;
+  top: 49px;
 }

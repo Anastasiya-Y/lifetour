@@ -2300,8 +2300,13 @@ button,
 }
 
 .advantages {
-  padding: 100px 0;
+  padding: 106px 0 100px 0;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .advantages {
+    padding: 53px 0 100px 0;
+  }
 }
 
 .advantages h2 {
@@ -2389,7 +2394,7 @@ button,
 
 .advantages__slide {
   max-width: 380px;
-  padding: 40px 20px;
+  padding: 39px 21px 40px 21px;
   text-align: center;
   border: 1px solid rgba(2, 102, 193, 0.1);
   height: auto;
@@ -2560,12 +2565,12 @@ button,
 
 .advantages__background-wrapper--left {
   left: 0;
-  top: -141px;
+  top: -135px;
 }
 
 .advantages__background-wrapper--right {
   right: 0;
-  top: 44px;
+  top: 49px;
 }
 
 .btn {
@@ -3591,12 +3596,12 @@ button,
 }
 @media (max-width: 1199px) {
   .feedback {
-    padding: 35px 0 70px 0;
+    padding: 35px 0 35px 0;
   }
 }
 @media (max-width: 767px) {
   .feedback {
-    padding: 0 0 60px 0;
+    padding: 0 0 15px 0;
   }
 }
 
