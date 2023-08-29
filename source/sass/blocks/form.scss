@@ -1,13 +1,32 @@
 .form {
   position: relative;
-  padding: 21.67vw 0 21.32vw 0;
+  padding: 21.6vw 0 18.32vw 0;
+  background-image: url("../img/background/background-forest.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include vp-1200 {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/background-forest@2x.png");
+    }
+  }
 
   @include vp-1199 {
     padding: 25.41vw 0 21.32vw 0;
+    background-image: url("../img/background/background-forest-tablet.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/background-forest-tablet@2x.png");
+    }
   }
 
   @include vp-767 {
     padding: 56.8vw 0 175px 0;
+    background-image: url("../img/background/background-forest-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background/background-forest-mobile@2x.png");
+    }
   }
 }
 
@@ -55,7 +74,7 @@
   margin: 0 18px 41px 0px;
 
   @include vp-1199 {
-    margin: 0 3px 29px 0px;
+    margin: 0 3px 28px 0;
     max-width: 300px;
   }
 
@@ -221,7 +240,7 @@
   }
 }
 
-.form__background-wrapper {
+/*.form__background-wrapper {
   background-color: $color-killarney;
   position: absolute;
   top: 0;
@@ -233,7 +252,7 @@
   width: 100vw;
   height: auto;
   object-fit: cover;
-}
+}*/
 
 
 
