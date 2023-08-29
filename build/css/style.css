@@ -2160,11 +2160,16 @@ button,
   position: relative;
   padding: 30px 0;
 }
+@media (max-width: 767px) {
+  .about {
+    padding: 0 0 30px 0;
+  }
+}
 
 .about__background-wrapper {
   position: absolute;
   z-index: -1;
-  top: -6px;
+  top: -5px;
   left: 0;
 }
 @media (max-width: 1199px) {
@@ -2175,7 +2180,7 @@ button,
 @media (max-width: 767px) {
   .about__background-wrapper {
     position: static;
-    margin: 0 -15px 46px -15px;
+    margin: 0 -15px 47px -15px;
   }
 }
 
@@ -2218,7 +2223,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  margin: 0 0 55px 0;
+  margin: 0 0 56px 0;
   position: relative;
 }
 .about h2::before {
@@ -6302,16 +6307,16 @@ button,
 }
 
 .train {
-  padding: 74px 0 120px 0;
+  padding: 74px 0 101px 0;
 }
 @media (max-width: 1199px) {
   .train {
-    padding: 46px 0 120px 0;
+    padding: 46px 0 28px 0;
   }
 }
 @media (max-width: 767px) {
   .train {
-    padding: 37px 0 120px 0;
+    padding: 37px 0 17px 0;
   }
 }
 
