@@ -4425,6 +4425,7 @@ button,
 
 .hero__slide {
   padding: 182px 0 70px 0;
+  height: auto;
   color: #ffffff;
   overflow: hidden;
 }
@@ -5599,7 +5600,7 @@ button,
 }
 
 .tours {
-  padding: 122px 0 50px 0;
+  padding: 123px 0 50px 0;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -5628,7 +5629,7 @@ button,
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
-  margin: 0 90px 55px 0;
+  margin: 0 90px 54px 0;
   max-width: 1000px;
   position: relative;
 }
@@ -5671,12 +5672,19 @@ button,
 .tours__container {
   width: 1200px;
   overflow: hidden;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
+}
+@media (max-width: 1239px) {
+  .tours__container {
+    width: 100%;
+    padding: 0;
+  }
 }
 @media (max-width: 1199px) {
   .tours__container {
     width: 100%;
     padding: 0 6px;
+    margin-bottom: 52px;
   }
 }
 @media (max-width: 767px) {
@@ -5709,6 +5717,12 @@ button,
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+@media (max-width: 1239px) {
+  .tours__slide {
+    width: 30.55vw;
+    height: 33.22vw;
+  }
+}
 @media (max-width: 1199px) {
   .tours__slide {
     width: 42.19vw;
@@ -5727,7 +5741,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__slide--black-sea .tours__place {
-    padding: 7px 18px 7px 16px;
+    padding: 9px 23px 7px 16px;
   }
 }
 
@@ -5750,12 +5764,6 @@ button,
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 61.9%, rgba(0, 0, 0, 0) 100%);
   opacity: 0.6;
 }
-@media (max-width: 1199px) {
-  .tours__image-wrapper {
-    width: 42.19vw;
-    height: 53.65vw;
-  }
-}
 @media (max-width: 767px) {
   .tours__image-wrapper {
     width: 100%;
@@ -5763,10 +5771,16 @@ button,
   }
 }
 
+@media (max-width: 1239px) {
+  .tours__image-wrapper img {
+    width: 30.55vw;
+    height: 33.22vw;
+  }
+}
 @media (max-width: 1199px) {
   .tours__image-wrapper img {
-    width: 42.19vw;
-    height: 53.65vw;
+    width: 100%;
+    height: 100%;
     max-width: none;
     -o-object-fit: cover;
        object-fit: cover;
@@ -5785,7 +5799,7 @@ button,
 }
 
 .tours__info-wrapper {
-  margin: auto 0 22px 0;
+  margin: auto 0 23px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -5801,7 +5815,7 @@ button,
 @media (max-width: 1199px) {
   .tours__info-wrapper {
     gap: 8px;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -5810,12 +5824,12 @@ button,
     -ms-grid-columns: (min-content)[2];
     grid-template-columns: repeat(2, -webkit-min-content);
     grid-template-columns: repeat(2, min-content);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 
 .tours__info-wrapper span {
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .tours__place {
@@ -5836,6 +5850,7 @@ button,
   .tours__place {
     min-width: auto;
     padding: 9px 24px 8px 15px;
+    margin-bottom: 4px;
   }
 }
 @media (max-width: 767px) {
@@ -5846,8 +5861,15 @@ button,
     grid-column: 1/-1;
     -ms-grid-column-align: start;
         justify-self: start;
-    padding: 7px 23px 7px 16px;
+    padding: 9px 23px 7px 16px;
   }
+}
+
+.tours__place svg,
+.tours__days,
+.tours__nights {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .tours__place svg {
@@ -5872,7 +5894,7 @@ button,
 @media (max-width: 767px) {
   .tours__days,
 .tours__nights {
-    padding: 5px 0;
+    padding: 8px 5px 4px 5px;
   }
 }
 
@@ -5895,7 +5917,12 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__days-image--elbrus {
-    margin: 0 13px 0 0;
+    margin: -2px 13px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .tours__days-image--elbrus {
+    margin: -1px 13px 0 -5px;
   }
 }
 
@@ -5909,7 +5936,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__days-image--belukha {
-    margin: 0 8px 0 0;
+    margin: -2px 7px 0 -5px;
   }
 }
 
@@ -5923,7 +5950,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__days-image--black-sea {
-    margin: 0 10px 0 0;
+    margin: 0px 10px 0 -5px;
   }
 }
 
@@ -5937,7 +5964,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__nights-image--elbrus {
-    margin: 0 13px 0 16px;
+    margin: -3px 13px 0 5px;
   }
 }
 
@@ -5951,7 +5978,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__nights-image--belukha {
-    margin: 0 7px 0 8px;
+    margin: 0px 7px 1px -1px;
   }
 }
 
@@ -5965,7 +5992,7 @@ button,
 }
 @media (max-width: 767px) {
   .tours__nights-image--black-sea {
-    margin: 0 9px 0 12px;
+    margin: 0 9px 1px 2px;
   }
 }
 
@@ -5991,7 +6018,7 @@ button,
     font-size: 20px;
     line-height: 24px;
     max-width: 226px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
   .tours__text h3::before {
     bottom: -15px;
@@ -6222,26 +6249,26 @@ button,
 }
 @media (max-width: 1199px) {
   .tours__link svg {
-    margin-left: 3px;
+    margin: 0 2px 0 3px;
   }
 }
 @media (max-width: 767px) {
   .tours__link svg {
-    margin: 0 0 0 1px;
+    margin: 0;
   }
 }
 
 .tours__link span {
-  margin-right: 10px;
+  margin-right: 1px;
 }
 @media (max-width: 1199px) {
   .tours__link span {
-    margin: 0 8px 0 3px;
+    margin: 0 9px 0 5px;
   }
 }
 @media (max-width: 767px) {
   .tours__link span {
-    margin: 0 9px 0 3px;
+    margin: 0 9px 0 2px;
   }
 }
 
