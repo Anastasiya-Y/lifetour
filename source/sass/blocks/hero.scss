@@ -38,6 +38,7 @@
   padding: 182px 0 70px 0;
 
   color: $color-default-white;
+  overflow: hidden;
 
   @include vp-1199 {
     padding: 174px 0 219px 0;
