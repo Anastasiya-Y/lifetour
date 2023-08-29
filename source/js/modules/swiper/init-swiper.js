@@ -101,6 +101,10 @@ const initSwiper = () => {
       768: {
         spaceBetween: 5,
       },
+      1200: {
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+      }
     },
   });
 };

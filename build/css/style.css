@@ -2305,7 +2305,12 @@ button,
 }
 @media (max-width: 1199px) {
   .advantages {
-    padding: 53px 0 100px 0;
+    padding: 53px 0 58px 0;
+  }
+}
+@media (max-width: 767px) {
+  .advantages {
+    padding: 53px 0 38px 0;
   }
 }
 
@@ -4191,6 +4196,10 @@ button,
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.gallery {
+  padding: 30px 0 20px 0;
 }
 
 .gallery__wrapper {
