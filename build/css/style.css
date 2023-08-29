@@ -5061,7 +5061,7 @@ button,
 }
 .is-open .main-header__wrapper {
   width: calc(100% + 90px);
-  padding: 30px 45px;
+  padding: 30px 45px 30px 40px;
   margin: -30px 0 0 -45px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -5093,7 +5093,7 @@ button,
   position: relative;
 }
 .is-open .main-header__toggle {
-  margin: 4px 8px 0px -7px;
+  margin: 4px 8px 0 -2px;
 }
 @media (max-width: 1199px) {
   .main-header__toggle {
@@ -5445,7 +5445,7 @@ button,
     text-transform: uppercase;
     color: #2d383f;
     font-weight: 700;
-    margin: 0 -5px;
+    margin: 0;
     padding: 13px 5px;
     letter-spacing: 0.04em;
   }
