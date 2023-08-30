@@ -14,7 +14,7 @@ const initSwiper = () => {
       bulletActiveClass: 'hero__bullet--active',
       clickable: true,
     },
-    keyboard: true,
+    simulateTouch: false,
     centeredSlides: true,
     loop: true,
     speed: 300,
@@ -104,7 +104,7 @@ const initSwiper = () => {
       1200: {
         slidesPerView: 'auto',
         spaceBetween: 5,
-      }
+      },
     },
   });
 };

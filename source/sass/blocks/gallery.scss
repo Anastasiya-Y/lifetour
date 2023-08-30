@@ -11,29 +11,19 @@
 }
 
 .gallery h2 {
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-  margin: 0 90px 24px 0;
   position: relative;
 
-  &::before {
-    content: "Фотогалерея";
-    position: absolute;
-    top: -17px;
-    left: 0;
+  margin: 0 90px 24px 0;
 
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 55px;
-
-    color: rgba($color-elephant, 0.03);
-  }
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
 
   @include vp-1199 {
+    margin-bottom: 23px;
+
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 23px;
 
     &::before {
       top: -13px;
@@ -44,9 +34,10 @@
   }
 
   @include vp-767 {
+    margin-bottom: 14px;
+
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 14px;
 
     &::before {
       top: -4px;
@@ -55,35 +46,46 @@
       line-height: 26px;
     }
   }
+
+  &::before {
+    content: "Фотогалерея";
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+  }
 }
 
 .gallery p {
-  margin: 0 0 45px 0;
   max-width: 700px;
+  margin: 0 0 45px 0;
 
   @include vp-1199 {
+    max-width: 400px;
     margin-bottom: 37px;
+
     font-size: 14px;
     line-height: 22px;
-    max-width: 400px;
   }
 
   @include vp-767 {
+    margin-bottom: 15px;
+
     font-size: 12px;
     line-height: 18px;
-    margin-bottom: 15px;
   }
 }
 
-.gallery__wrapper {
-  position: relative;
-}
-
 .gallery__content-wrapper {
+  width: fit-content;
   margin: 0 auto;
   padding: 0;
+
   list-style-type: none;
-  width: fit-content;
 }
 
 .gallery__slide {
@@ -123,9 +125,11 @@
   position: absolute;
   top: 65px;
   right: 0;
+
   display: flex;
-  background-color: $color-default-white;
   width: fit-content;
+
+  background-color: $color-default-white;
 
   @include vp-1199 {
     top: 62px;
@@ -133,40 +137,38 @@
 
   @include vp-767 {
     position: static;
+
     margin: 0 0 15px auto;
   }
 }
 
 .gallery__button {
-  padding: 5px;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
+  padding: 5px;
+
+  background-color: $color-navy-blue;
+  border: none;
   cursor: pointer;
 
-  @include hover-focus {
-    background-color: $color-default-white;
+  transition: all $trans-default;
 
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
     box-shadow: inset 0 0 0 1px $color-resolution-blue;
 
     & svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      background-color: $color-resolution-blue;
-
-      & svg {
-        fill: $color-default-white;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     background-color: $color-resolution-blue;
 
     & svg {
@@ -186,6 +188,8 @@
 }
 
 .gallery__button svg {
+  transition: all $trans-default;
+
   fill: $color-default-white;
 }
 

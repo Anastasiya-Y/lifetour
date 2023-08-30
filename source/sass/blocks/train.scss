@@ -11,30 +11,19 @@
 }
 
 .train h2 {
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-  margin: 0 90px 32px 0;
-  //max-width: 1000px;
   position: relative;
 
-  &::before {
-    content: "Обучение";
-    position: absolute;
-    top: -17px;
-    left: 0;
+  margin: 0 90px 32px 0;
 
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 55px;
-
-    color: rgba($color-elephant, 0.03);
-  }
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
 
   @include vp-1199 {
+    margin-bottom: 21px;
+
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 21px;
 
     &::before {
       top: -13px;
@@ -45,9 +34,10 @@
   }
 
   @include vp-767 {
+    margin-bottom: 16px;
+
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 16px;
 
     &::before {
       top: -4px;
@@ -56,6 +46,18 @@
       line-height: 26px;
     }
   }
+
+  &::before {
+    content: "Обучение";
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+  }
 }
 
 .train p {
@@ -63,22 +65,24 @@
   margin: 0 0 56px 0;
 
   @include vp-1199 {
-    margin-bottom: 66px;
     max-width: 560px;
+    margin-bottom: 66px;
   }
 
   @include vp-767 {
+    max-width: 500px;
+    margin-bottom: 49px;
+
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 49px;
-    max-width: 500px;
   }
 }
 
 .train__instructors {
+  position: relative;
+
   width: 1200px;
   margin-bottom: 49px;
-  position: relative;
 
   @include vp-1199 {
     width: 100%;
@@ -97,17 +101,20 @@
 .train__content-wrapper {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .train h3 {
   margin: 0 90px 43px 0;
+
+  font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  font-weight: 700;
 
   @include vp-1199 {
     margin-bottom: 34px;
+
     font-size: 18px;
     line-height: 18px;
   }
@@ -127,15 +134,16 @@
 }
 
 .train__slide {
-  padding: 19px 20px 20px 20px;
-  box-shadow: 0px 0px 30px 0px rgba($color-resolution-blue, 0.1);
   max-width: 278px;
-  background-color: $color-default-white;
   height: auto;
+  padding: 19px 20px 20px 20px;
+
+  background-color: $color-default-white;
+  box-shadow: 0 0 30px 0 rgba($color-resolution-blue, 0.1);
 
   @include vp-1199 {
-    padding: 13px 15px 15px 15px;
     max-width: none;
+    padding: 13px 15px 15px 15px;
   }
 
   @include vp-767 {
@@ -145,6 +153,8 @@
 
 .train__image-wrapper {
   margin-bottom: 16px;
+
+  background-color: $color-solitude;
 }
 
 .train__image-wrapper img {
@@ -153,9 +163,10 @@
 
 .train__info-wrapper {
   display: grid;
-  grid-template-columns: 1fr 24px;
-  gap: 14px;
   align-items: start;
+
+  gap: 14px;
+  grid-template-columns: 1fr 24px;
 
   @include vp-1199 {
     gap: 12px;
@@ -167,11 +178,12 @@
 }
 
 .train__slide h4 {
-  margin: 0 20px 0 0;
   max-width: 145px;
+  margin: 0 20px 0 0;
+
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  font-weight: 700;
 }
 
 .train__instructor-link {
@@ -180,32 +192,28 @@
   align-items: center;
   min-width: 24px;
   min-height: 24px;
-  padding: 3px;
-  box-shadow: inset 0 0 0 1px rgba($color-navy-blue, 0.1);
   margin-top: 4px;
+  padding: 3px;
 
   background-color: $color-default-white;
+  box-shadow: inset 0 0 0 1px rgba($color-navy-blue, 0.1);
 
   transition: all $trans-default;
 
   user-select: none;
 
-  @include hover-focus {
-    box-shadow: inset 0 0 0 1px $color-elephant;
-
-    &:active {
-      box-shadow: none;
-      background-color: $color-navy-blue;
-
-      & svg {
-        fill: $color-default-white;
-      }
-    }
+  @include vp-767 {
+    margin-right: 12px;
   }
 
-  @include active {
-    box-shadow: none;
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 1px $color-elephant;
+  }
+
+  &:active {
     background-color: $color-navy-blue;
+    box-shadow: none;
 
     & svg {
       fill: $color-default-white;
@@ -223,10 +231,6 @@
       fill: rgba($color-elephant, 0.3);
     }
   }
-
-  @include vp-767 {
-    margin-right: 12px;
-  }
 }
 
 .train__instructor-link svg {
@@ -237,8 +241,10 @@
 
 .train__slide p {
   margin: 0;
+
   font-size: 12px;
   line-height: 16px;
+
   grid-column: 1 / -1;
 
   @include vp-1199 {
@@ -250,7 +256,9 @@
   position: absolute;
   top: -7px;
   right: 2px;
+
   display: flex;
+
   background-color: $color-default-white;
 
   @include vp-1199 {
@@ -264,35 +272,32 @@
 }
 
 .train__button {
-  padding: 5px;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
+  padding: 5px;
+
+  background-color: $color-navy-blue;
+  border: none;
   cursor: pointer;
 
-  @include hover-focus {
-    background-color: $color-default-white;
+  transition: all $trans-default;
 
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
     box-shadow: inset 0 0 0 1px $color-resolution-blue;
 
     & svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      background-color: $color-resolution-blue;
-
-      & svg {
-        fill: $color-default-white;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     background-color: $color-resolution-blue;
 
     & svg {
@@ -312,6 +317,8 @@
 }
 
 .train__button svg {
+  transition: all $trans-default;
+
   fill: $color-default-white;
 }
 
@@ -336,12 +343,14 @@
 }
 
 .train__learning-list {
+  display: grid;
   margin: 0;
   padding: 0 0 32px 0;
+
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+
   gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
@@ -353,31 +362,19 @@
   }
 
   @include vp-767 {
+    padding: 0 26px 0 0;
+
     grid-template-columns: 1fr;
     row-gap: 25px;
-    padding: 0 26px 0 0;
   }
 }
 
 .train__learning-item {
+  position: relative;
+
   display: flex;
   align-items: start;
-
-  position: relative;
   padding-top: 43px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-
-    background-color: $color-navy-blue;
-  }
 
   @include vp-1199 {
     padding: 0 50px 0 0;
@@ -390,17 +387,13 @@
   @include vp-767 {
     padding: 0 0 0 37px;
 
-    & svg {
-      width: 19px;
-      height: auto;
-    }
-
     &::before {
+      top: 13px;
+      bottom: auto;
+      left: 4px;
+
       width: 13px;
       height: 13px;
-      bottom: auto;
-      top: 13px;
-      left: 4px;
     }
 
     &::after {
@@ -408,18 +401,33 @@
       position: absolute;
       top: 19px;
       left: 10px;
+
       width: 1px;
       height: calc(100% + 25px);
 
       background-color: rgba($color-navy-blue, 0.2);
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+
+    width: 14px;
+    height: 14px;
+
+    background-color: $color-navy-blue;
+    border-radius: 50%;
+  }
 }
 
 .train__learning-item--nature {
   @include vp-1199 {
-    grid-column: 2 / 3;
     padding-right: 57px;
+
+    grid-column: 2 / 3;
 
     &::after {
       display: none;
@@ -427,16 +435,19 @@
   }
 
   @include vp-767 {
-    grid-column: 1 / -1;
     padding-right: 0;
 
-    & svg {
-      width: 19px;
-      height: 22px;
-    }
+    grid-column: 1 / -1;
 
     &::after {
       display: block;
+    }
+  }
+
+  & svg {
+    @include vp-767 {
+      width: 19px;
+      height: 22px;
     }
   }
 }
@@ -466,25 +477,7 @@
 }
 
 .train__learning-item:nth-child(4n+1) {
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -32px;
-    left: -100vw;
-
-    width: 200vw;
-    height: 1px;
-
-    background-color: rgba($color-navy-blue, 0.2);
-  }
-
-  & svg {
-    margin-top: 8px;
-  }
-
   @include vp-1199 {
-
     &::after {
       content: "";
       position: absolute;
@@ -501,26 +494,38 @@
   @include vp-767 {
     padding-right: 0;
 
-    & svg {
-      margin-top: 7px;
-    }
-
     &::after {
       top: 19px;
+      bottom: auto;
       left: 10px;
+
       width: 1px;
       height: calc(100% + 25px);
-      bottom: auto;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -100vw;
+
+    width: 200vw;
+    height: 1px;
+
+    background-color: rgba($color-navy-blue, 0.2);
+  }
+
+  & svg {
+    margin-top: 8px;
+
+    @include vp-767 {
+      margin-top: 7px;
     }
   }
 }
 
 .train__learning-item:nth-child(4n+2) {
-
-  & svg {
-    margin-top: 9px;
-  }
-
   @include vp-1199 {
     &::after {
       content: "";
@@ -536,26 +541,25 @@
   }
 
   @include vp-767 {
-    & svg {
-      margin-top: 8px;
-    }
-
     &::after {
       top: 19px;
       left: 10px;
+
       height: calc(100% + 25px);
+    }
+  }
+
+  & svg {
+    margin-top: 9px;
+
+    @include vp-767 {
+      margin-top: 8px;
     }
   }
 }
 
 .train__learning-item:nth-child(4n+3) {
-
-  & svg {
-    margin-top: 9px;
-  }
-
   @include vp-1199 {
-
     &::after {
       content: "";
       position: absolute;
@@ -574,11 +578,6 @@
   }
 
   @include vp-767 {
-
-    & svg {
-      margin-top: 6px;
-    }
-
     &::before {
       top: 13px;
     }
@@ -586,20 +585,23 @@
     &::after {
       top: 19px;
       left: 10px;
+
       width: 1px;
       height: calc(100% + 25px);
+    }
+  }
+
+  & svg {
+    margin-top: 9px;
+
+    @include vp-767 {
+      margin-top: 6px;
     }
   }
 }
 
 .train__learning-item:nth-child(4n+4) {
-
-  & svg {
-    margin: 8px 15px 0 1px;
-  }
-
   @include vp-1199 {
-
     &::before {
       top: -27px;
     }
@@ -608,10 +610,6 @@
   @include vp-767 {
     padding-right: 0;
 
-    & svg {
-      margin: 7px 12px 0 1px;
-    }
-
     &::before {
       top: 13px;
     }
@@ -619,8 +617,17 @@
     &::after {
       top: 19px;
       left: 10px;
+
       width: 1px;
       height: calc(100% + 25px);
+    }
+  }
+
+  & svg {
+    margin: 8px 15px 0 1px;
+
+    @include vp-767 {
+      margin: 7px 12px 0 1px;
     }
   }
 }
@@ -638,12 +645,14 @@
   margin: 0 15px 0 0;
 
   @include vp-1199 {
-    margin-top: 8px;
     flex-shrink: 0;
+    margin-top: 8px;
   }
 
   @include vp-767 {
     margin-right: 12px;
+    width: 19px;
+    height: auto;
   }
 }
 

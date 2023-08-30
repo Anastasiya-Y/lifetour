@@ -1,6 +1,7 @@
 .tours {
-  padding: 123px 0 50px 0;
   position: relative;
+
+  padding: 123px 0 50px 0;
 
   @include vp-1199 {
     padding: 88px 0 40px 0;
@@ -13,34 +14,25 @@
 
 .tours__wrapper {
   position: relative;
+
   display: flex;
   flex-direction: column;
 }
 
 .tours__wrapper h2 {
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-  margin: 0 90px 54px 0;
   position: relative;
 
-  &::before {
-    content: "Ближайшие туры";
-    position: absolute;
-    top: -16px;
-    left: 0;
+  margin: 0 90px 54px 0;
 
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 55px;
-
-    color: rgba($color-elephant, 0.03);
-  }
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
 
   @include vp-1199 {
+    margin-bottom: 43px;
+
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 43px;
 
     &::before {
       top: -13px;
@@ -51,24 +43,38 @@
   }
 
   @include vp-767 {
+    margin-bottom: 27px;
+
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 27px;
 
     &::before {
       top: -4px;
 
+      max-width: 256px;
+
       font-size: 26px;
       line-height: 26px;
-      max-width: 256px;
     }
+  }
+
+  &::before {
+    content: "Ближайшие туры";
+    position: absolute;
+    top: -16px;
+    left: 0;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
   }
 }
 
 .tours__container {
   width: 1200px;
-  overflow: hidden;
   margin-bottom: 53px;
+  overflow: hidden;
 
   @include vp-1239 {
     width: 100%;
@@ -77,31 +83,36 @@
 
   @include vp-1199 {
     width: 100%;
-    padding: 0 6px;
     margin-bottom: 52px;
+    padding: 0 6px;
   }
 
   @include vp-767 {
-    padding: 0;
     margin-bottom: 29px;
+    padding: 0;
   }
 }
 
 .tours__content-wrapper {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .tours__slide {
   position: relative;
-  color: $color-default-white;
-  padding: 28px 20px;
-  width: 380px;
-  height: 412px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 380px;
+  height: 412px;
+  padding: 28px 20px;
+
+  color: $color-default-white;
+
+  background-color: $color-wedgewood;
 
   @include vp-1239 {
     width: 30.55vw;
@@ -132,8 +143,14 @@
   top: 0;
   left: 0;
   z-index: 1;
+
   width: 100%;
   height: 100%;
+
+  @include vp-767 {
+    width: 100%;
+    height: 128.75vw;
+  }
 
   &::before {
     content: "";
@@ -147,11 +164,6 @@
     background-image: $light-to-black;
     opacity: 0.6;
   }
-
-  @include vp-767 {
-    width: 100%;
-    height: 128.75vw;
-  }
 }
 
 .tours__image-wrapper img {
@@ -162,8 +174,8 @@
 
   @include vp-1199 {
     width: 100%;
-    height: 100%;
     max-width: none;
+    height: 100%;
 
     object-fit: cover;
   }
@@ -180,23 +192,27 @@
 }
 
 .tours__info-wrapper {
-  margin: auto 0 23px 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
   align-items: start;
+  margin: auto 0 23px 0;
+
+  font-weight: 500;
   font-size: 12px;
   line-height: 12px;
-  font-weight: 500;
+
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
 
   @include vp-1199 {
-    gap: 8px;
     margin-bottom: 18px;
+
+    gap: 8px;
   }
 
   @include vp-767 {
-    grid-template-columns: repeat(2, min-content);
     margin-bottom: 12px;
+
+    grid-template-columns: repeat(2, min-content);
   }
 }
 
@@ -205,24 +221,26 @@
 }
 
 .tours__place {
-  background-color: $color-navy-blue;
-  padding: 9px 20px 7px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-width: 108px;
+  padding: 9px 20px 7px 20px;
+
+  background-color: $color-navy-blue;
 
   @include vp-1199 {
     min-width: auto;
-    padding: 9px 24px 8px 15px;
     margin-bottom: 4px;
+    padding: 9px 24px 8px 15px;
   }
 
   @include vp-767 {
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-    justify-self: start;
     padding: 9px 23px 7px 16px;
+
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    justify-self: start;
   }
 }
 
@@ -233,16 +251,16 @@
 }
 
 .tours__place svg {
-  margin-right: 6px;
   flex-shrink: 0;
+  margin-right: 6px;
 }
 
 .tours__days,
 .tours__nights {
-  padding: 5px;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
 
   @include vp-767 {
     padding: 8px 5px 4px 5px;
@@ -292,7 +310,7 @@
   }
 
   @include vp-767 {
-    margin: 0px 10px 0 -5px;
+    margin: 0 10px 0 -5px;
   }
 }
 
@@ -312,11 +330,11 @@
   margin: 0 8px 0 13px;
 
   @include vp-1199 {
-    margin: 0 7px 0 0px;
+    margin: 0 7px 0 0;
   }
 
   @include vp-767 {
-    margin: 0px 7px 1px -1px;
+    margin: 0 7px 1px -1px;
   }
 }
 
@@ -333,13 +351,26 @@
 }
 
 .tours__text h3 {
+  position: relative;
+
+  max-width: 240px;
   margin: 0 0 38px 0;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  position: relative;
-  max-width: 240px;
+
+  @include vp-767 {
+    max-width: 226px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      bottom: -15px;
+    }
+  }
 
   &::before {
     content: "";
@@ -352,23 +383,13 @@
 
     background-color: rgba($color-default-white, 0.2);
   }
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 24px;
-    max-width: 226px;
-    margin-bottom: 30px;
-
-    &::before {
-      bottom: -15px;
-    }
-  }
 }
 
 .tours__description-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+
   gap: 10px;
+  grid-template-columns: repeat(3, auto);
 }
 
 .tours__level {
@@ -400,8 +421,9 @@
 
 .tours__rating {
   display: grid;
-  grid-template-columns: repeat(5, 15px);
+
   gap: 1px;
+  grid-template-columns: repeat(5, 15px);
 
   @include vp-767 {
     gap: 0;
@@ -422,10 +444,10 @@
 
 .tours__description-wrapper span {
   display: block;
-  font-size: 13px;
+
   font-weight: 700;
+  font-size: 13px;
   line-height: 13px;
-  display: block;
 
   @include vp-767 {
     font-size: 12px;
@@ -437,7 +459,9 @@
   position: absolute;
   top: 0;
   right: 0;
+
   display: flex;
+
   background-color: $color-default-white;
 
   @include vp-1199 {
@@ -450,35 +474,32 @@
 }
 
 .tours__button {
-  padding: 5px;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
+  padding: 5px;
+
+  background-color: $color-navy-blue;
+  border: none;
   cursor: pointer;
 
-  @include hover-focus {
-    background-color: $color-default-white;
+  transition: all $trans-default;
 
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
     box-shadow: inset 0 0 0 1px $color-resolution-blue;
 
     & svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      background-color: $color-resolution-blue;
-
-      & svg {
-        fill: $color-default-white;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     background-color: $color-resolution-blue;
 
     & svg {
@@ -498,6 +519,8 @@
 }
 
 .tours__button svg {
+  transition: all $trans-default;
+
   fill: $color-default-white;
 }
 
@@ -510,15 +533,33 @@
 }
 
 .tours__link {
-  color: $color-elephant;
-  text-transform: uppercase;
-  letter-spacing: 0.64px;
-  line-height: 16px;
-  font-weight: 700;
-  transition: all $trans-default;
   display: inline-flex;
   justify-content: center;
   margin: 0 auto;
+
+  font-weight: 700;
+  line-height: 16px;
+  color: $color-elephant;
+  text-transform: uppercase;
+  letter-spacing: 0.64px;
+
+  transition: all $trans-default;
+
+  user-select: none;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-resolution-blue;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
 
   &:focus-visible {
     outline: none;
@@ -529,28 +570,12 @@
 
     pointer-events: none;
   }
-
-  @include hover-focus {
-    color: $color-resolution-blue;
-
-
-    &:active {
-      color: $color-navy-blue;
-    }
-  }
-
-  @include active {
-    color: $color-navy-blue;
-  }
-
-  @include vp-767 {
-    line-height: 14px;
-    font-size: 14px;
-  }
 }
 
 .tours__link svg {
   margin-top: 1px;
+
+  transition: all $trans-default;
 
   @include vp-1199 {
     margin: 0 2px 0 3px;
@@ -562,7 +587,7 @@
 }
 
 .tours__link span {
-  margin: 0px 12px 0 0;
+  margin: 0 12px 0 0;
 
   @include vp-1199 {
     margin: 0 9px 0 5px;
@@ -575,9 +600,9 @@
 
 .tours__background-wrapper {
   position: absolute;
-  z-index: -1;
-  right: 0;
   top: -18px;
+  right: 0;
+  z-index: -1;
 
   @include vp-1199 {
     top: -95px;

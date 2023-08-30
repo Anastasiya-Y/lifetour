@@ -9,15 +9,17 @@
     position: absolute;
     top: -109px;
     right: 20px;
+    left: auto;
     z-index: 5;
+
     display: flex;
     width: auto;
     height: auto;
-    left: auto;
 
     @include vp-1199 {
       top: -100px;
       right: 50%;
+
       transform: translateX(50%);
     }
 
@@ -36,11 +38,11 @@
 }
 
 .hero__slide {
-  padding: 182px 0 70px 0;
   height: auto;
+  padding: 182px 0 70px 0;
+  overflow: hidden;
 
   color: $color-default-white;
-  overflow: hidden;
 
   @include vp-1199 {
     padding: 174px 0 169px 0;
@@ -76,6 +78,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+
   width: 100vw;
   height: 100%;
 }
@@ -83,6 +86,7 @@
 .hero__image-wrapper img {
   width: 100%;
   min-height: 100%;
+
   object-fit: cover;
 }
 
@@ -98,38 +102,41 @@
 }
 
 .hero__slide h2 {
+  position: relative;
+  z-index: 1;
+
+  max-width: 948px;
   margin: 0 0 23px 0;
 
   font-weight: 800;
   font-size: 77px;
   line-height: 77px;
-  max-width: 948px;
-  position: relative;
-  z-index: 1;
 
   @include vp-1199 {
     margin-bottom: 13px;
-    text-align: center;
 
     font-size: 56px;
     line-height: 56px;
+    text-align: center;
   }
 
   @include vp-767 {
+    margin-bottom: 14px;
+
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 14px;
   }
 }
 
 .hero__slide p {
+  max-width: 470px;
   margin: 0 0 37px 0;
 
   font-size: 17px;
-  max-width: 470px;
 
   @include vp-1199 {
     margin-bottom: 27px;
+
     text-align: center;
   }
 
@@ -143,12 +150,14 @@
 
 .hero__link {
   width: 220px;
-  margin-bottom: 150px;
   min-height: 58px;
+  margin-bottom: 150px;
+
+  cursor: pointer;
 
   @include vp-1199 {
-    margin: 0 auto 34px auto;
     width: 30.3%;
+    margin: 0 auto 34px auto;
     padding-top: 11px;
   }
 
@@ -170,15 +179,17 @@
 }
 
 .hero__info {
-  padding: 13px 19px;
-  border: 1px solid $color-default-white;
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 8px;
   margin-bottom: 10px;
+  padding: 13px 19px;
 
   font-size: 12px;
   line-height: 16px;
+
+  border: 1px solid $color-default-white;
+
+  gap: 8px;
+  grid-template-columns: repeat(2, auto);
 }
 
 .hero__info:not(:last-child) {
@@ -235,10 +246,10 @@
   left: 50%;
   z-index: 1;
 
+  display: none;
   width: 56px;
   height: 56px;
   padding: 0;
-  display: none;
 
   background-color: rgba($color-default-white, 0.2);
   border: 1px solid $color-default-white;
@@ -250,23 +261,19 @@
 
   user-select: none;
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: $color-transparent;
     border-color: $color-resolution-blue;
 
     & svg {
       stroke: $color-default-black;
     }
-
-    &:active {
-      border-color: $color-transparent;
-      background-color: $color-resolution-blue;
-    }
   }
 
-  @include active {
-    border-color: $color-transparent;
+  &:active {
     background-color: $color-resolution-blue;
+    border-color: $color-transparent;
   }
 
   &:focus-visible {
@@ -274,8 +281,8 @@
   }
 
   &:disabled {
-    border-color: rgba($color-navy-blue, 0.1);
     background-color: $color-transparent;
+    border-color: rgba($color-navy-blue, 0.1);
 
     pointer-events: none;
 
@@ -295,21 +302,23 @@
 
   transition: all $trans-default;
 
+  fill: $color-default-white;
   stroke: $color-transparent;
   stroke-width: 1;
-  fill: $color-default-white;
 }
 
 .hero__photos-wrapper {
   position: absolute;
-  width: 100%;
   top: 21px;
   left: 790px;
 
+  width: 100%;
+
   @include vp-1199 {
+    position: relative;
     top: 0;
     left: 0;
-    position: relative;
+
     width: 442px;
     height: 365px;
   }
@@ -352,12 +361,14 @@
   position: absolute;
   top: 119px;
   right: 0;
+  z-index: 1;
+
   width: 340px;
   height: 220px;
-  z-index: 1;
 
   @include vp-1199 {
     position: static;
+
     margin: 35px 0 110px 0;
   }
 
@@ -366,9 +377,14 @@
   }
 }
 
+.hero__audio-wrapper iframe {
+  border: 0;
+}
+
 .hero___pagination-wrapper {
-  width: 100%;
   position: relative;
+
+  width: 100%;
   min-width: 320px;
   max-width: 1240px;
   margin: 0 auto;
@@ -386,12 +402,13 @@
 .hero__bullet {
   width: 10px;
   height: 10px;
+  padding: 0;
 
   background-color: $color-transparent;
   border: 1px solid $color-default-white;
   border-radius: 50%;
-  padding: 0;
   cursor: pointer;
+
   transition: all $trans-default;
 
   @include vp-767 {
@@ -399,11 +416,12 @@
     height: 8px;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     background-color: $color-default-white;
   }
 
-  @include active {
+  &:active {
     background-color: $color-default-white;
   }
 

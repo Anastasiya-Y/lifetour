@@ -1,9 +1,12 @@
 .form {
   position: relative;
+
   padding: 21.6vw 0 18.32vw 0;
+
+  background-color: $color-killarney;
   background-image: url("../img/background/background-forest.png");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 
   @include vp-1200 {
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -13,6 +16,7 @@
 
   @include vp-1199 {
     padding: 25.41vw 0 21.32vw 0;
+
     background-image: url("../img/background/background-forest-tablet.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -22,6 +26,7 @@
 
   @include vp-767 {
     padding: 56.8vw 0 175px 0;
+
     background-image: url("../img/background/background-forest-mobile.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -33,14 +38,15 @@
 .form__wrapper {
   max-width: 978px;
   margin: 0 auto;
+
   text-align: center;
   color: $color-default-white;
 
   @include vp-1199 {
-    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: none;
   }
 
   @include vp-767 {
@@ -49,37 +55,38 @@
 }
 
 .form__wrapper h2 {
-  margin: 0 18px 17px 0px;
+  margin: 0 18px 17px 0;
 
   font-weight: 800;
   font-size: 35px;
   line-height: 35px;
 
   @include vp-1199 {
+    max-width: 300px;
     margin: 0 0 19px 0;
 
     font-size: 25px;
     line-height: 25px;
-    max-width: 300px;
   }
 
   @include vp-767 {
+    margin-bottom: 13px;
+
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 13px;
   }
 }
 
 .form__wrapper p {
-  margin: 0 18px 41px 0px;
+  margin: 0 18px 41px 0;
 
   @include vp-1199 {
-    margin: 0 3px 28px 0;
     max-width: 300px;
+    margin: 0 3px 28px 0;
   }
 
   @include vp-767 {
-    margin: 0 0 26px 0px;
+    margin: 0 0 26px 0;
 
     font-size: 12px;
     line-height: 18px;
@@ -88,12 +95,13 @@
 
 .form__wrapper form {
   display: grid;
-  grid-template-columns: 1fr 238px;
+
   gap: 30px;
+  grid-template-columns: 1fr 238px;
 
   @include vp-1199 {
-    grid-template-columns: 1fr;
     gap: 15px;
+    grid-template-columns: 1fr;
   }
 
   @include vp-767 {
@@ -111,26 +119,19 @@
 
 .form__fields {
   display: grid;
-  grid-template-columns: repeat(2, 340px);
   align-items: start;
-  gap: 30px;
   margin: 0;
   padding: 0;
 
   border: none;
 
+  gap: 30px;
+  grid-template-columns: repeat(2, 340px);
+
   @include vp-1199 {
-    grid-template-columns: 1fr;
     gap: 7px;
-  }
-
-  /*
-  @include vp-767 {
-    margin-bottom: 37px;
-
-    gap: 31px;
     grid-template-columns: 1fr;
-  }*/
+  }
 }
 
 .form__field-wrapper {
@@ -159,8 +160,8 @@
   width: 340px;
   padding: 22px 30px 21px 29px;
 
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
   font-family: $ff-montserrat;
   color: $color-elephant;
@@ -172,18 +173,10 @@
 
   user-select: none;
 
-  &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: $ff-montserrat;
-    color: rgba($color-elephant, 0.5);
-    transition: all $trans-default;
-  }
-
   @include vp-1199 {
     width: 100%;
     padding: 15px;
+
     font-size: 14px;
     line-height: 14px;
 
@@ -193,7 +186,17 @@
     }
   }
 
-  @include hover {
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: $ff-montserrat;
+    color: rgba($color-elephant, 0.5);
+
+    transition: all $trans-default;
+  }
+
+  &:hover {
     border-color: $color-navy-blue;
 
     &::placeholder {
@@ -201,15 +204,11 @@
     }
   }
 
-  @include focus {
+  &:focus {
     border-color: $color-resolution-blue;
-
-    &:active {
-      border-color: $color-resolution-blue;
-    }
   }
 
-  @include active {
+  &:active {
     border-color: $color-resolution-blue;
   }
 
@@ -228,8 +227,11 @@
 
 .form__button {
   padding: 23px 9px 21px 9px;
-  line-height: 16px;
+
   font-weight: 500;
+  line-height: 16px;
+
+  cursor: pointer;
 
   @include vp-1199 {
     padding: 22px 9px 20px 9px;
@@ -239,21 +241,3 @@
     padding: 19px 9px 17px 9px;
   }
 }
-
-/*.form__background-wrapper {
-  background-color: $color-killarney;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.form__background-wrapper img {
-  width: 100vw;
-  height: auto;
-  object-fit: cover;
-}*/
-
-
-
-

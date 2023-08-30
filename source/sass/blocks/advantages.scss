@@ -1,6 +1,7 @@
 .advantages {
-  padding: 106px 0 100px 0;
   position: relative;
+
+  padding: 106px 0 100px 0;
 
   @include vp-1199 {
     padding: 53px 0 58px 0;
@@ -12,26 +13,14 @@
 }
 
 .advantages h2 {
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-  margin: 0 0 47px 0;
-  text-align: center;
   position: relative;
 
-  &::before {
-    content: "Преимущества";
-    position: absolute;
-    top: -17px;
-    left: 50%;
+  margin: 0 0 47px 0;
 
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 55px;
-
-    color: rgba($color-elephant, 0.03);
-    transform: translate(-50%);
-  }
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
 
   @include vp-1199 {
     font-size: 25px;
@@ -46,9 +35,10 @@
   }
 
   @include vp-767 {
+    margin-bottom: 30px;
+
     font-size: 22px;
     line-height: 22px;
-    margin-bottom: 30px;
 
     &::before {
       top: -4px;
@@ -56,6 +46,20 @@
       font-size: 26px;
       line-height: 26px;
     }
+  }
+
+  &::before {
+    content: "Преимущества";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+
+    transform: translate(-50%);
   }
 }
 
@@ -68,14 +72,16 @@
 .advantages__content-wrapper {
   margin: 0 0 50px 0;
   padding: 0;
+
   list-style-type: none;
 
   @include vp-1199 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
     margin: 0;
+
+    gap: 30px;
   }
 
   @include vp-767 {
@@ -85,11 +91,13 @@
 
 .advantages__slide {
   max-width: 380px;
-  padding: 39px 21px 40px 21px;
-  text-align: center;
-  border: 1px solid rgba($color-navy-blue, 0.1);
   height: auto;
+  padding: 39px 21px 40px 21px;
+
+  text-align: center;
+
   background-color: $color-default-white;
+  border: 1px solid rgba($color-navy-blue, 0.1);
 
   @include vp-1199 {
     max-width: 324px;
@@ -121,27 +129,31 @@
 
 .advantages__slide h3 {
   margin: 0 0 15px 0;
+
+  font-weight: 600;
   font-size: 18px;
   line-height: 18px;
-  font-weight: 600;
 
   @include vp-1199 {
+    margin-bottom: 14px;
+
     font-size: 16px;
     line-height: 16px;
-    margin-bottom: 14px;
   }
 
   @include vp-767 {
+    margin-bottom: 15px;
+
     font-size: 14px;
     line-height: 14px;
-    margin-bottom: 15px;
   }
 }
 
 .advantages__slide p {
+  margin: 0;
+
   font-size: 14px;
   line-height: 22px;
-  margin: 0;
 
   @include vp-1199 {
     font-size: 12px;
@@ -151,6 +163,7 @@
 
 .advantages__buttons {
   display: inline-flex;
+
   background-color: $color-default-white;
 
   @include vp-1199 {
@@ -159,35 +172,32 @@
 }
 
 .advantages__button {
-  padding: 5px;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $color-navy-blue;
   width: 37px;
   height: 35px;
+  padding: 5px;
+
+  background-color: $color-navy-blue;
+  border: none;
   cursor: pointer;
 
-  @include hover-focus {
-    background-color: $color-default-white;
+  transition: all $trans-default;
 
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-default-white;
     box-shadow: inset 0 0 0 1px $color-resolution-blue;
 
     & svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      background-color: $color-resolution-blue;
-
-      & svg {
-        fill: $color-default-white;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     background-color: $color-resolution-blue;
 
     & svg {
@@ -207,6 +217,8 @@
 }
 
 .advantages__button svg {
+  transition: all $trans-default;
+
   fill: $color-default-white;
 }
 
@@ -228,11 +240,11 @@
 }
 
 .advantages__background-wrapper--left {
-  left: 0;
   top: -135px;
+  left: 0;
 }
 
 .advantages__background-wrapper--right {
-  right: 0;
   top: 49px;
+  right: 0;
 }

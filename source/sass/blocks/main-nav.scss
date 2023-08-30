@@ -1,37 +1,29 @@
 .main-nav {
   padding-top: 21px;
 
-  .is-open & {
-    order: 10;
-    position: static;
-    width: 100%;
-    display: block;
-    overflow: auto;
-    max-height: 100vh;
+  @include vp-1199 {
+    display: none;
+    padding-top: 0;
   }
 
-  @include vp-1199 {
-    padding-top: 0;
-    display: none;
+  .is-open & {
+    position: static;
+
+    display: block;
+    order: 10;
+    width: 100%;
+    max-height: 100vh;
+    overflow: auto;
   }
 
   .main-footer & {
     padding: 20px 64px 0 0;
 
     @include vp-1199 {
-      padding: 2px 0 0 0;
       display: block;
+      padding: 2px 0 0 0;
     }
   }
-
-  /*@include vp-1199 {
-      padding-top: 0;
-      display: none;
-
-    .main-footer & {
-      padding: 2px 0 0 0;
-    }
-  }*/
 }
 
 .main-nav__list {
@@ -39,7 +31,19 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+
+
+  .is-open & {
+    display: block;
+    padding: 31px 0 26px 0;
+    overflow: scroll;
+
+    @include vp-767 {
+      padding-top: 16px;
+    }
+  }
 
   .main-header & {
     @include vp-1199 {
@@ -48,21 +52,10 @@
     }
   }
 
-  .is-open & {
-    display: block;
-    padding: 31px 0 26px 0;
-    overflow: scroll;
-  }
-
-  @include vp-767 {
-    .is-open & {
-      padding-top: 16px;
-    }
-  }
-
   .main-footer & {
     @include vp-767 {
       display: block;
+
       column-count: 2;
       column-gap: 59px;
     }
@@ -85,12 +78,6 @@
       margin: 0 0 5px -5px;
     }
   }
-
-  /*.main-footer & {
-    @include vp-767 {
-      margin: 0 0 5px -5px;
-    }
-  }*/
 }
 
 .main-nav__item:last-child {
@@ -102,6 +89,8 @@
 }
 
 .main-nav__link {
+  position: relative;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -113,7 +102,6 @@
   transition: all $trans-default;
 
   user-select: none;
-  position: relative;
 
   &::before {
     content: "";
@@ -130,7 +118,7 @@
     transition: all $trans-default;
   }
 
-  @include hover {
+  &:hover {
     &::before {
       opacity: 1;
     }
@@ -147,47 +135,20 @@
   }
 
   .main-header & {
-    @include focus {
-      box-shadow: inset 0 0 0 1px $color-default-white;
-
-      &:active {
-        box-shadow: none;
-
-        &::before {
-          opacity: 0;
-        }
-      }
-    }
-
-    @include active {
-      box-shadow: none;
-
-      &::before {
-        opacity: 0;
-      }
-    }
-
     @include vp-1199 {
-      text-transform: uppercase;
-      color: $color-elephant;
-      font-weight: 700;
       margin: 0;
       padding: 13px 5px;
+
+      font-weight: 700;
+      color: $color-elephant;
+      text-transform: uppercase;
       letter-spacing: 0.04em;
 
-      @include focus {
+      &:focus {
         box-shadow: inset 0 0 0 1px $color-elephant;
-
-        &:active {
-          box-shadow: none;
-
-          &::before {
-            opacity: 0;
-          }
-        }
       }
 
-      @include active {
+      &:active {
         box-shadow: none;
 
         &::before {
@@ -197,41 +158,46 @@
     }
 
     @include vp-767 {
+      margin: 0;
+      padding: 12px 0 10px 0;
+
       font-size: 14px;
       line-height: 14px;
-      padding: 12px 0 10px 0;
-      margin: 0;
-    }
-  }
-
-  .main-footer & {
-    &::before {
-      background-color: $color-elephant;
     }
 
-    @include focus {
-      box-shadow: inset 0 0 0 1px $color-elephant;
-
-      &:active {
-        box-shadow: none;
-
-        &::before {
-          opacity: 0;
-        }
-      }
+    &:focus {
+      box-shadow: inset 0 0 0 1px $color-default-white;
     }
 
-    @include active {
+    &:active {
       box-shadow: none;
 
       &::before {
         opacity: 0;
       }
     }
+  }
 
+  .main-footer & {
     @include vp-1199 {
-      line-height: 14px;
       font-size: 14px;
+      line-height: 14px;
+    }
+
+    &::before {
+      background-color: $color-elephant;
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 1px $color-elephant;
+    }
+
+    &:active {
+      box-shadow: none;
+
+      &::before {
+        opacity: 0;
+      }
     }
   }
 }

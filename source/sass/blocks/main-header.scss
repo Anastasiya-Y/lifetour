@@ -1,16 +1,13 @@
 .main-header {
-  color: $color-default-white;
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
-  padding: 40px 0;
   z-index: 2;
 
-  &.is-open {
-    background-color: rgba($color-default-black, 0.5);
-    height: 100%;
-  }
+  width: 100%;
+  padding: 40px 0;
+
+  color: $color-default-white;
 
   @include vp-1199 {
     padding: 30px 0;
@@ -19,87 +16,91 @@
   @include vp-767 {
     padding: 9px 0;
   }
+
+  &.is-open {
+    height: 100%;
+
+    background-color: rgba($color-default-black, 0.5);
+  }
 }
 
 .main-header__wrapper {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
-
-  .is-open & {
-    width: calc(100% + 90px);
-    padding: 30px 45px 30px 40px;
-    margin: -30px 0 0 -45px;
-    flex-wrap: wrap;
-    background-color: $color-default-white;
-
-    @include vp-767 {
-      width: calc(100% + 30px);
-      padding: 15px 15px 14px 15px;
-      margin: -15px 0 0 -15px;
-    }
-  }
 
   @include vp-1199 {
     flex-wrap: wrap;
   }
+
+  .is-open & {
+    flex-wrap: wrap;
+    width: calc(100% + 90px);
+    margin: -30px 0 0 -45px;
+    padding: 30px 45px 30px 40px;
+
+    background-color: $color-default-white;
+
+    @include vp-767 {
+      width: calc(100% + 30px);
+      margin: -15px 0 0 -15px;
+      padding: 15px 15px 14px 15px;
+    }
+  }
 }
 
 .main-header__toggle {
+  position: relative;
+
+  display: none;
   width: 36px;
   height: 36px;
-  margin: 4px 6px 0px -5px;
+  margin: 4px 6px 0 -5px;
   padding: 5px;
 
   background-color: $color-transparent;
   border: none;
   cursor: pointer;
-  display: none;
-  position: relative;
 
-  .is-open & {
-    margin: 4px 8px 0 -2px;
-  }
+  user-select: none;
 
   @include vp-1199 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 
   @include vp-767 {
     margin-top: 0;
+  }
 
-    .is-open & {
+  .is-open & {
+    margin: 4px 8px 0 -2px;
+
+    @include vp-767 {
       margin: -1px 0 0 -7px;
     }
   }
-}
 
-.main-header__toggle {
-  @include hover-focus {
+  &:hover,
+  &:focus {
     svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      svg {
-        fill: $color-navy-blue;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     svg {
       fill: $color-navy-blue;
     }
   }
 
   &:focus-visible {
-    outline: 1px solid $color-resolution-blue;
-
     color: $color-resolution-blue;
+
+    outline: 1px solid $color-resolution-blue;
 
     svg {
       fill: $color-resolution-blue;
@@ -115,9 +116,13 @@
 
 .main-header__button-open {
   display: block;
-  fill: $color-default-white;
-  transition: all $trans-default;
   flex-shrink: 0;
+
+  transition: all $trans-default;
+
+  user-select: none;
+
+  fill: $color-default-white;
 
   .is-open & {
     display: none;
@@ -126,8 +131,12 @@
 
 .main-header__button-close {
   display: none;
-  fill: $color-elephant;
+
   transition: all $trans-default;
+
+  user-select: none;
+
+  fill: $color-elephant;
 
   .is-open & {
     display: block;
@@ -137,19 +146,22 @@
 .main-header__logo {
   margin-right: 21px;
 
-  @include hover-focus {
+  @include vp-1199 {
+    margin: 0 20px 0 129px;
+  }
+
+  @include vp-767 {
+    margin: 6px 0 1px 20px;
+  }
+
+  &:hover,
+  &:focus {
     & svg {
       fill: $color-resolution-blue;
     }
-
-    &:active {
-      & svg {
-        fill: $color-navy-blue;
-      }
-    }
   }
 
-  @include active {
+  &:active {
     & svg {
       fill: $color-navy-blue;
     }
@@ -164,24 +176,12 @@
 
     pointer-events: none;
   }
-
-  @include vp-1199 {
-    margin: 0 20px 0 129px;
-  }
-
-  @include vp-767 {
-    margin: 6px 0 1px 20px;
-  }
 }
 
 .main-header__logo svg {
-  fill: $color-default-white;
-
   transition: all $trans-default;
 
-  .is-open & {
-    fill: $color-elephant;
-  }
+  fill: $color-default-white;
 
   @include vp-1199 {
     width: 144px;
@@ -192,26 +192,32 @@
     width: 112px;
     height: 34px;
   }
+
+  .is-open & {
+    fill: $color-elephant;
+  }
 }
 
 .main-header__phone-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
   align-items: start;
   margin-left: 20px;
   padding-top: 24px;
+
+  gap: 15px;
+  grid-template-columns: 1fr;
 
   @include vp-1199 {
     padding-top: 16px;
   }
 
   @include vp-767 {
-    width: 100%;
     justify-content: end;
-    grid-template-columns: min-content;
+    width: 100%;
     margin: 0;
     padding: 0;
+
+    grid-template-columns: min-content;
   }
 }
 
@@ -223,19 +229,26 @@
 
   transition: all $trans-default;
 
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
   .is-open & {
     color: $color-elephant;
   }
 
-  @include hover-focus {
+  &:hover,
+  &:focus {
     color: $color-resolution-blue;
-
-    &:active {
-      color: $color-navy-blue;
-    }
   }
 
-  @include active {
+  &:active {
     color: $color-navy-blue;
   }
 
@@ -247,15 +260,5 @@
     opacity: 0.1;
 
     pointer-events: none;
-  }
-
-  @include vp-1199 {
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 14px;
   }
 }

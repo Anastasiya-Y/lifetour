@@ -11,7 +11,7 @@ const iconOptions = {
 const getIconOptions = () => {
   const customIcon = L.icon(iconOptions);
   const markerOptions = {
-    title: "lifetourLocation",
+    title: 'lifetourLocation',
     clickable: false,
     draggable: false,
     icon: customIcon,
@@ -25,7 +25,7 @@ const createMap = () => {
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
 
   const marker = L.marker([55.7748763, 37.6326415], getIconOptions()).addTo(map);

@@ -1,6 +1,5 @@
 const swiperContainerAdvantages = document.querySelector('.advantages__container');
 const breakpoint = window.matchMedia('(min-width: 1200px)');
-// const breakpoint = window.matchMedia('(max-width: 1199px)');
 let swiperAdvantages;
 
 const initAdvantagesSwiper = () => {
@@ -29,17 +28,6 @@ const checkBreakpoint = () => {
     return;
   }
 };
-
-/* const checkBreakpoint = () => {
-  if (breakpoint.matches) {
-    if (swiperAdvantages !== undefined) {
-      swiperAdvantages.destroy(true, true);
-    }
-    return;
-  } else {
-    return initAdvantagesSwiper();
-  }
-}; */
 
 breakpoint.addEventListener('change', checkBreakpoint);
 
