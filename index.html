@@ -1,0 +1,2966 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Сайт туристической компании LifeTour" />
+    <title>Путешествия</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="preload"
+      href="fonts/montserrat-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat-medium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat-semibold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat-extrabold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="main-header" data-header>
+        <div class="container">
+          <div class="main-header__wrapper">
+            <button
+              class="main-header__toggle"
+              type="button"
+              aria-label="Открыть меню/Закрыть меню."
+              data-burger
+            >
+              <svg class="main-header__button-open" width="26" height="19">
+                <use href="img/sprite.svg#icon-open"></use>
+              </svg>
+              <svg class="main-header__button-close" width="22" height="22">
+                <use href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a
+              class="main-header__logo"
+              href="index.html"
+              aria-label="Переход на главную страницу сайта LifeTour."
+            >
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#logotype"></use>
+              </svg>
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#tours" data-close-menu
+                    >Туры</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#train" data-close-menu
+                    >Обучение</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#about" data-close-menu
+                    >О&nbsp;нас</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#feedback" data-close-menu
+                    >Отзывы</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#gallery" data-close-menu
+                    >Фотографии</a
+                  >
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#contacts" data-close-menu
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="main-header__phone-wrapper">
+              <a
+                class="main-header__phone"
+                href="tel:88007253232"
+                aria-label="Позвонить в туристическую компанию LifeTour."
+                >8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <h1 class="visually-hidden">Сайт туристической компании LifeTour.</h1>
+          <div class="hero__container swiper-container">
+            <ul class="hero__content-wrapper swiper-wrapper">
+              <li class="hero__slide hero__slide--caucasus swiper-slide">
+                <div class="hero__image-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-caucasus-mobile.webp    1x,
+                        img/content/hero/hero-caucasus-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-caucasus-tablet.webp    1x,
+                        img/content/hero/hero-caucasus-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/hero/hero-caucasus.webp    1x,
+                        img/content/hero/hero-caucasus@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-caucasus-mobile.jpg    1x,
+                        img/content/hero/hero-caucasus-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-caucasus-tablet.jpg    1x,
+                        img/content/hero/hero-caucasus-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="img/content/hero/hero-caucasus.jpg"
+                      srcset="img/content/hero/hero-caucasus@2x.jpg 2x"
+                      width="1440"
+                      height="800"
+                      loading="lazy"
+                      alt="Фото пейзажей Кавказа."
+                    />
+                  </picture>
+                </div>
+                <div class="container">
+                  <div class="hero__slide-wrapper">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>
+                      В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
+                      потрясающие ландшафты и&nbsp;совершите восход
+                      на&nbsp;вершину горы Чегет.
+                    </p>
+                    <a
+                      class="hero__link btn"
+                      href="#"
+                      aria-label="Ознакомиться с информацией по туру на Кавказ."
+                      >Смотреть тур</a
+                    >
+                    <div class="hero__info-wrapper">
+                      <div class="hero__info">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>6&nbsp;дней/5&nbsp;ночей</span>
+                      </div>
+                      <div class="hero__info">
+                        <svg width="12" height="12">
+                          <use href="img/sprite.svg#icon-level"></use>
+                        </svg>
+                        <span>Высокая сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero__video-wrapper">
+                      <a
+                        class="hero__video-link"
+                        href="https://www.youtube.com/watch?v=9TZXsZItgdw"
+                        aria-label="Бесплатные интерактивные онлайн-курсы HTML Academy."
+                      >
+                        <picture>
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-video-tablet.webp    1x,
+                              img/content/hero/hero-video-tablet@2x.webp 2x
+                            "
+                          />
+                          <source
+                            type="image/webp"
+                            srcset="
+                              img/content/hero/hero-video.webp    1x,
+                              img/content/hero/hero-video@2x.webp 2x
+                            "
+                          />
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-video-tablet.jpg    1x,
+                              img/content/hero/hero-video-tablet@2x.jpg 2x
+                            "
+                          />
+                          <img
+                            src="img/content/hero/hero-video.jpg"
+                            srcset="img/content/hero/hero-video@2x.jpg 2x"
+                            width="482"
+                            height="317"
+                            loading="lazy"
+                            alt="Бесплатные интерактивные онлайн-курсы HTML Academy."
+                          />
+                        </picture>
+                      </a>
+                      <button
+                        class="hero__video-button"
+                        aria-label="Запустить видео."
+                      >
+                        <svg width="12" height="22">
+                          <use href="img/sprite.svg#icon-play"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hero__slide hero__slide--kamchatka swiper-slide">
+                <div class="hero__image-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-kamchatka-mobile.webp    1x,
+                        img/content/hero/hero-kamchatka-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-kamchatka-tablet.webp    1x,
+                        img/content/hero/hero-kamchatka-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/hero/hero-kamchatka.webp    1x,
+                        img/content/hero/hero-kamchatka@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-kamchatka-mobile.jpg    1x,
+                        img/content/hero/hero-kamchatka-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-kamchatka-tablet.jpg    1x,
+                        img/content/hero/hero-kamchatka-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="img/content/hero/hero-kamchatka.jpg"
+                      srcset="img/content/hero/hero-kamchatka@2x.jpg 2x"
+                      width="1440"
+                      height="800"
+                      loading="lazy"
+                      alt="Фото пейзажей Камчатки."
+                    />
+                  </picture>
+                </div>
+                <div class="container">
+                  <div class="hero__slide-wrapper">
+                    <h2>Невероятная природа Камчатки</h2>
+                    <p>
+                      Незабываемое приключение, во&nbsp;время которого
+                      вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
+                      из&nbsp;самых нетронутых уголков дикой природы
+                      в&nbsp;мире.
+                    </p>
+                    <a
+                      class="hero__link btn"
+                      href="#"
+                      aria-label="Ознакомиться с информацией по туру на Камчатку."
+                      >Смотреть тур</a
+                    >
+                    <div class="hero__info-wrapper">
+                      <div class="hero__info">
+                        <svg width="11" height="11">
+                          <use href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>9&nbsp;дней/10&nbsp;ночей</span>
+                      </div>
+                      <div class="hero__info">
+                        <svg width="10" height="11">
+                          <use href="img/sprite.svg#icon-level"></use>
+                        </svg>
+                        <span>Средняя сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero__photos-wrapper">
+                      <div class="hero__photo hero__photo--nature-wrapper">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-kamchatka-nature-tablet.webp    1x,
+                              img/content/hero/hero-kamchatka-nature-tablet@2x.webp 2x
+                            "
+                          />
+                          <source
+                            type="image/webp"
+                            srcset="
+                              img/content/hero/hero-kamchatka-nature.webp    1x,
+                              img/content/hero/hero-kamchatka-nature@2x.webp 2x
+                            "
+                          />
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-kamchatka-nature-tablet.png    1x,
+                              img/content/hero/hero-kamchatka-nature-tablet@2x.png 2x
+                            "
+                          />
+                          <img
+                            src="img/content/hero/hero-kamchatka-nature.png"
+                            srcset="
+                              img/content/hero/hero-kamchatka-nature@2x.png 2x
+                            "
+                            width="308"
+                            height="407"
+                            loading="lazy"
+                            alt="Фото природы Камчатки."
+                          />
+                        </picture>
+                      </div>
+                      <div class="hero__photo hero__photo--traveller-wrapper">
+                        <picture>
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-kamchatka-traveller-tablet.webp    1x,
+                              img/content/hero/hero-kamchatka-traveller-tablet@2x.webp 2x
+                            "
+                          />
+                          <source
+                            type="image/webp"
+                            srcset="
+                              img/content/hero/hero-kamchatka-traveller.webp    1x,
+                              img/content/hero/hero-kamchatka-traveller@2x.webp 2x
+                            "
+                          />
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="
+                              img/content/hero/hero-kamchatka-traveller-tablet.png    1x,
+                              img/content/hero/hero-kamchatka-traveller-tablet@2x.png 2x
+                            "
+                          />
+                          <img
+                            src="img/content/hero/hero-kamchatka-traveller.png"
+                            srcset="
+                              img/content/hero/hero-kamchatka-traveller@2x.png 2x
+                            "
+                            width="277"
+                            height="366"
+                            loading="lazy"
+                            alt="Фото туриста на Камчатке."
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="hero__slide hero__slide--altai swiper-slide">
+                <div class="hero__image-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-altai-mobile.webp    1x,
+                        img/content/hero/hero-altai-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-altai-tablet.webp    1x,
+                        img/content/hero/hero-altai-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/hero/hero-altai.webp    1x,
+                        img/content/hero/hero-altai@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/content/hero/hero-altai-mobile.jpg    1x,
+                        img/content/hero/hero-altai-mobile@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/content/hero/hero-altai-tablet.jpg    1x,
+                        img/content/hero/hero-altai-tablet@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="img/content/hero/hero-altai.jpg"
+                      srcset="img/content/hero/hero-altai@2x.jpg 2x"
+                      width="1440"
+                      height="800"
+                      loading="lazy"
+                      alt="Фото пейзажей Алтая."
+                    />
+                  </picture>
+                </div>
+                <div class="container">
+                  <div class="hero__slide-wrapper">
+                    <h2>Магические пейзажи Алтайского Края</h2>
+                    <p>
+                      Алтайский трекинг&ndash;тур&nbsp;&mdash; это захватывающее
+                      приключение с&nbsp;посещением магических
+                      и&nbsp;захватывающих дух ландшафтов Алтайских гор.
+                    </p>
+                    <a
+                      class="hero__link btn"
+                      href="#"
+                      aria-label="Ознакомиться с информацией по туру на Алтай."
+                      >Смотреть тур</a
+                    >
+                    <div class="hero__info-wrapper">
+                      <div class="hero__info">
+                        <svg width="11" height="11">
+                          <use href="img/sprite.svg#icon-moon"></use>
+                        </svg>
+                        <span>8&nbsp;дней/7&nbsp;ночей</span>
+                      </div>
+                      <div class="hero__info">
+                        <svg width="10" height="11">
+                          <use href="img/sprite.svg#icon-level"></use>
+                        </svg>
+                        <span>Легкая сложность</span>
+                      </div>
+                    </div>
+                    <div class="hero__audio-wrapper">
+                      <iframe
+                        src="https://music.yandex.ru/iframe/#track/112912322/25474374"
+                        width="340"
+                        height="220"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="hero___pagination-wrapper">
+              <div class="container">
+                <div class="hero__pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tours" id="tours">
+          <div class="container">
+            <div class="tours__wrapper">
+              <h2 data-content="Ближайшие туры">Ближайшие туры</h2>
+              <div class="tours__container swiper-container">
+                <ul class="tours__content-wrapper swiper-wrapper">
+                  <li class="tours__slide swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-mobile.webp    1x,
+                            img/content/tours/tours-elbrus-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-tablet.webp    1x,
+                            img/content/tours/tours-elbrus-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-elbrus.webp    1x,
+                            img/content/tours/tours-elbrus@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-mobile.jpg    1x,
+                            img/content/tours/tours-elbrus-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-tablet.jpg    1x,
+                            img/content/tours/tours-elbrus-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-elbrus.jpg"
+                          srcset="img/content/tours/tours-elbrus@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Эльбрус."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Кавказ</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--elbrus"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>4&nbsp;дня</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--elbrus"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>3&nbsp;ночи</span>
+                        </div>
+                      </div>
+                      <h3>Путешествие вокруг Эльбруса</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>12.06&ndash;19.06</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;15&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.webp    1x,
+                            img/content/tours/tours-belukha-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.webp    1x,
+                            img/content/tours/tours-belukha-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-belukha.webp    1x,
+                            img/content/tours/tours-belukha@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.jpg    1x,
+                            img/content/tours/tours-belukha-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.jpg    1x,
+                            img/content/tours/tours-belukha-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-belukha.jpg"
+                          srcset="img/content/tours/tours-belukha@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Белухи."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Алтай</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>14&nbsp;дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>13&nbsp;ночей</span>
+                        </div>
+                      </div>
+                      <h3>Путь к&nbsp;подножию Белухи</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>14.06&ndash;23.06</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;25&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide tours__slide--black-sea swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-mobile.webp    1x,
+                            img/content/tours/tours-black-sea-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-tablet.webp    1x,
+                            img/content/tours/tours-black-sea-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-black-sea.webp    1x,
+                            img/content/tours/tours-black-sea@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-mobile.jpg    1x,
+                            img/content/tours/tours-black-sea-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-tablet.jpg    1x,
+                            img/content/tours/tours-black-sea-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-black-sea.jpg"
+                          srcset="img/content/tours/tours-black-sea@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Фишт."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Адыгея</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--black-sea"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>7&nbsp;дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--black-sea"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>6&nbsp;ночей</span>
+                        </div>
+                      </div>
+                      <h3>Через Фишт к&nbsp;Черному морю</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>15.07&ndash;19.07</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;22&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.webp    1x,
+                            img/content/tours/tours-belukha-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.webp    1x,
+                            img/content/tours/tours-belukha-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-belukha.webp    1x,
+                            img/content/tours/tours-belukha@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.jpg    1x,
+                            img/content/tours/tours-belukha-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.jpg    1x,
+                            img/content/tours/tours-belukha-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-belukha.jpg"
+                          srcset="img/content/tours/tours-belukha@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Белухи."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Алтай</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>14&nbsp;дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>13&nbsp;ночей</span>
+                        </div>
+                      </div>
+                      <h3>Путь к&nbsp;подножию Белухи</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>14.06&ndash;23.06</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;25&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-mobile.webp    1x,
+                            img/content/tours/tours-elbrus-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-tablet.webp    1x,
+                            img/content/tours/tours-elbrus-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-elbrus.webp    1x,
+                            img/content/tours/tours-elbrus@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-mobile.jpg    1x,
+                            img/content/tours/tours-elbrus-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-elbrus-tablet.jpg    1x,
+                            img/content/tours/tours-elbrus-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-elbrus.jpg"
+                          srcset="img/content/tours/tours-elbrus@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Эльбрус."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Кавказ</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--elbrus"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>4&nbsp;дня</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--elbrus"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>3&nbsp;ночи</span>
+                        </div>
+                      </div>
+                      <h3>Путешествие вокруг Эльбруса</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>12.06&ndash;19.06</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;15&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide tours__slide--black-sea swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-mobile.webp    1x,
+                            img/content/tours/tours-black-sea-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-tablet.webp    1x,
+                            img/content/tours/tours-black-sea-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-black-sea.webp    1x,
+                            img/content/tours/tours-black-sea@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-mobile.jpg    1x,
+                            img/content/tours/tours-black-sea-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-black-sea-tablet.jpg    1x,
+                            img/content/tours/tours-black-sea-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-black-sea.jpg"
+                          srcset="img/content/tours/tours-black-sea@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Фишт."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Адыгея</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--black-sea"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>7&nbsp;дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--black-sea"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>6&nbsp;ночей</span>
+                        </div>
+                      </div>
+                      <h3>Через Фишт к&nbsp;Черному морю</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>15.07&ndash;19.07</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;22&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="tours__slide swiper-slide">
+                    <div class="tours__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.webp    1x,
+                            img/content/tours/tours-belukha-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.webp    1x,
+                            img/content/tours/tours-belukha-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/tours/tours-belukha.webp    1x,
+                            img/content/tours/tours-belukha@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/tours/tours-belukha-mobile.jpg    1x,
+                            img/content/tours/tours-belukha-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/tours/tours-belukha-tablet.jpg    1x,
+                            img/content/tours/tours-belukha-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/tours/tours-belukha.jpg"
+                          srcset="img/content/tours/tours-belukha@2x.jpg 2x"
+                          width="380"
+                          height="412"
+                          loading="lazy"
+                          alt="Фото горы Белухи."
+                        />
+                      </picture>
+                    </div>
+                    <div class="tours__text">
+                      <div class="tours__info-wrapper">
+                        <div class="tours__place">
+                          <svg width="9" height="12">
+                            <use href="img/sprite.svg#icon-place"></use>
+                          </svg>
+                          <span>Алтай</span>
+                        </div>
+                        <div class="tours__days">
+                          <svg
+                            class="tours__days-image tours__days-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-days"></use>
+                          </svg>
+                          <span>14&nbsp;дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg
+                            class="tours__nights-image tours__nights-image--belukha"
+                            width="20"
+                            height="20"
+                          >
+                            <use href="img/sprite.svg#icon-moon"></use>
+                          </svg>
+                          <span>13&nbsp;ночей</span>
+                        </div>
+                      </div>
+                      <h3>Путь к&nbsp;подножию Белухи</h3>
+                      <div class="tours__description-wrapper">
+                        <div class="tours__level">
+                          <h4>Сложность:</h4>
+                          <div class="tours__rating">
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-white"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                            <svg width="15" height="13">
+                              <use href="img/sprite.svg#icon-star-border"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="tours__dates">
+                          <h4>Даты набора:</h4>
+                          <span>14.06&ndash;23.06</span>
+                        </div>
+                        <div class="tours__group">
+                          <h4>Группа:</h4>
+                          <span>до&nbsp;25&nbsp;чел.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tours__buttons">
+                <button class="tours__button tours__button--prev" aria-label="Назад.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="tours__button tours__button--next" aria-label="Вперед.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <a
+                class="tours__link"
+                href="#"
+                aria-label="Ознакомиться с информацией по всем турам."
+              >
+                <span>Показать все туры</span>
+                <svg width="9" height="14">
+                  <use href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="tours__background-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/background/background-clouds-mobile.webp    1x,
+                    img/background/background-clouds-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/background/background-clouds-tablet.webp    1x,
+                    img/background/background-clouds-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/background/background-clouds.webp    1x,
+                    img/background/background-clouds@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/background/background-clouds-mobile.png    1x,
+                    img/background/background-clouds-mobile@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/background/background-clouds-tablet.png    1x,
+                    img/background/background-clouds-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  src="img/background/background-clouds.png"
+                  srcset="img/background/background-clouds@2x.png 2x"
+                  width="602"
+                  height="1364"
+                  alt="Фоновое изображение облаков."
+                />
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="train" id="train">
+          <div class="container">
+            <h2 data-content="Обучение">Обучение</h2>
+            <p>
+              Обучение проводится квалифицированными специалистами,
+              за&nbsp;плечами которых десятки пройденных маршрутов Кавказа,
+              Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+            </p>
+            <div class="train__instructors">
+              <h3>Наши инструкторы</h3>
+              <div class="train__container swiper-container">
+                <div class="train__buttons">
+                  <button class="train__button train__button--prev" aria-label="Назад.">
+                    <svg width="13" height="8">
+                      <use href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                  <button class="train__button train__button--next" aria-label="Вперед.">
+                    <svg width="13" height="8">
+                      <use href="img/sprite.svg#icon-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="train__content-wrapper swiper-wrapper">
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-prokofev-mobile.webp    1x,
+                            img/content/train/train-prokofev-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-prokofev-tablet.webp    1x,
+                            img/content/train/train-prokofev-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-prokofev.webp    1x,
+                            img/content/train/train-prokofev@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-prokofev-mobile.jpg    1x,
+                            img/content/train/train-prokofev-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-prokofev-tablet.jpg    1x,
+                            img/content/train/train-prokofev-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-prokofev.jpg"
+                          srcset="img/content/train/train-prokofev@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Александра Прокофьева."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Александр Прокофьев</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Александра Прокофьева во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Строгий и&nbsp;внимательный инструктор, веселый
+                        и&nbsp;общительный человек. Любит природу.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-afinogenova-mobile.webp    1x,
+                            img/content/train/train-afinogenova-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-afinogenova-tablet.webp    1x,
+                            img/content/train/train-afinogenova-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-afinogenova.webp    1x,
+                            img/content/train/train-afinogenova@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-afinogenova-mobile.jpg    1x,
+                            img/content/train/train-afinogenova-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-afinogenova-tablet.jpg    1x,
+                            img/content/train/train-afinogenova-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-afinogenova.jpg"
+                          srcset="img/content/train/train-afinogenova@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Светланы Афиногеновой."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Светлана Афиногенова</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Светланы Афиногеновой во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Видеть мир вокруг, познавать его опасности, находить
+                        друг друга, становиться ближе, чувствовать&nbsp;&mdash;
+                        в&nbsp;этом назначение жизни.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kolesnichenko-mobile.webp    1x,
+                            img/content/train/train-kolesnichenko-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kolesnichenko-tablet.webp    1x,
+                            img/content/train/train-kolesnichenko-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kolesnichenko.webp    1x,
+                            img/content/train/train-kolesnichenko@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kolesnichenko-mobile.jpg    1x,
+                            img/content/train/train-kolesnichenko-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kolesnichenko-tablet.jpg    1x,
+                            img/content/train/train-kolesnichenko-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kolesnichenko.jpg"
+                          srcset="
+                            img/content/train/train-kolesnichenko@2x.jpg 2x
+                          "
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Надежды Колесниченко."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Надежда Колесниченко</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Надежды Колесниченко во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Участники говорят, что Надежда ответственная, приятная
+                        в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней
+                        чувствуешь себя спокойно и&nbsp;уверенно.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.webp    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.webp    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kajgorodov.webp    1x,
+                            img/content/train/train-kajgorodov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.jpg    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.jpg    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kajgorodov.jpg"
+                          srcset="img/content/train/train-kajgorodov@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Федора Кайгородова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Федор Кайгородов</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Федора Кайгородова во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                        В&nbsp;России побывал в&nbsp;горных районах Хибины,
+                        Архыз, много путешествует по&nbsp;Европе.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.webp    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.webp    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kajgorodov.webp    1x,
+                            img/content/train/train-kajgorodov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.jpg    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.jpg    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kajgorodov.jpg"
+                          srcset="img/content/train/train-kajgorodov@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Федора Кайгородова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Федор Кайгородов</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Федора Кайгородова во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                        В&nbsp;России побывал в&nbsp;горных районах Хибины,
+                        Архыз, много путешествует по&nbsp;Европе.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.webp    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.webp    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kajgorodov.webp    1x,
+                            img/content/train/train-kajgorodov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.jpg    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.jpg    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kajgorodov.jpg"
+                          srcset="img/content/train/train-kajgorodov@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Федора Кайгородова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Федор Кайгородов</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Федора Кайгородова во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                        В&nbsp;России побывал в&nbsp;горных районах Хибины,
+                        Архыз, много путешествует по&nbsp;Европе.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.webp    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.webp    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kajgorodov.webp    1x,
+                            img/content/train/train-kajgorodov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.jpg    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.jpg    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kajgorodov.jpg"
+                          srcset="img/content/train/train-kajgorodov@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Федора Кайгородова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Федор Кайгородов</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Федора Кайгородова во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                        В&nbsp;России побывал в&nbsp;горных районах Хибины,
+                        Архыз, много путешествует по&nbsp;Европе.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="train__slide swiper-slide">
+                    <div class="train__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.webp    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.webp    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/train/train-kajgorodov.webp    1x,
+                            img/content/train/train-kajgorodov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-mobile.jpg    1x,
+                            img/content/train/train-kajgorodov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/train/train-kajgorodov-tablet.jpg    1x,
+                            img/content/train/train-kajgorodov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/train/train-kajgorodov.jpg"
+                          srcset="img/content/train/train-kajgorodov@2x.jpg 2x"
+                          width="238"
+                          height="212"
+                          loading="lazy"
+                          alt="Фото инструктора Федора Кайгородова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="train__info-wrapper">
+                      <h4>Федор Кайгородов</h4>
+                      <a
+                        class="train__instructor-link"
+                        href="#"
+                        aria-label="Страница Федора Кайгородова во VKontakte."
+                        target="_blank"
+                      >
+                        <svg width="14" height="8">
+                          <use href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                      </a>
+                      <p>
+                        Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                        В&nbsp;России побывал в&nbsp;горных районах Хибины,
+                        Архыз, много путешествует по&nbsp;Европе.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="train__learning">
+              <h3>Процесс обучения</h3>
+              <ul class="train__learning-list">
+                <li class="train__learning-item">
+                  <svg width="25" height="25">
+                    <use href="img/sprite.svg#icon-map"></use>
+                  </svg>
+                  <p>Изучение спортивного туристского движения</p>
+                </li>
+                <li class="train__learning-item">
+                  <svg width="24" height="24">
+                    <use href="img/sprite.svg#icon-equipment"></use>
+                  </svg>
+                  <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                </li>
+                <li class="train__learning-item train__learning-item--nature">
+                  <svg width="23" height="23">
+                    <use href="img/sprite.svg#icon-nature"></use>
+                  </svg>
+                  <p>
+                    Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене
+                  </p>
+                </li>
+                <li
+                  class="train__learning-item train__learning-item--mountains"
+                >
+                  <svg width="25" height="25">
+                    <use href="img/sprite.svg#icon-mountains"></use>
+                  </svg>
+                  <p>Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about" id="about">
+          <div class="container">
+            <div class="about__background-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/background/background-travellers-mobile.webp    1x,
+                    img/background/background-travellers-mobile@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/background/background-travellers-tablet.webp    1x,
+                    img/background/background-travellers-tablet@2x.webp 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/background/background-travellers.webp    1x,
+                    img/background/background-travellers@2x.webp 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    img/background/background-travellers-mobile.png    1x,
+                    img/background/background-travellers-mobile@2x.png 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    img/background/background-travellers-tablet.png    1x,
+                    img/background/background-travellers-tablet@2x.png 2x
+                  "
+                />
+                <img
+                  src="img/background/background-travellers.png"
+                  srcset="img/background/background-travellers@2x.png 2x"
+                  width="808"
+                  height="474"
+                  alt="Фоновое изображение путешественников."
+                />
+              </picture>
+            </div>
+            <div class="about__content-background-wrapper">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/background/background-clouds-about.webp    1x,
+                    img/background/background-clouds-about@2x.webp 2x
+                  "
+                />
+                <img
+                  src="img/background/background-clouds-about.png"
+                  srcset="img/background/background-clouds-about@2x.png 2x"
+                  width="618"
+                  height="280"
+                  alt="Фоновое изображение облаков."
+                />
+              </picture>
+            </div>
+            <div class="about__content-wrapper">
+              <h2 data-content="О нас">О&nbsp;нас</h2>
+              <div class="about__content">
+                <h3>История компании</h3>
+                <p>
+                  В&nbsp;далеком 2000 году мы&nbsp;начали заниматься
+                  туризмом&nbsp;&ndash; походы, поездки, восхождения, нам это
+                  настолько понравилось, что мы&nbsp;этим стали жить. Спустя
+                  5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы
+                  показывать людям удивительные места нашей страны.
+                </p>
+              </div>
+              <div class="about__content">
+                <h3>Наша цель</h3>
+                <p>
+                  Подарить вам незабываемые впечатления от&nbsp;похода
+                  в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные
+                  вопросы. При организации мы&nbsp;обязательно учтем все ваши
+                  пожелания. Вам останется только наслаждаться незабываемым
+                  приключением в&nbsp;приятной компании.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback" id="feedback">
+          <div class="container">
+            <div class="feedback__wrapper">
+              <h2 data-content="Отзывы">Отзывы</h2>
+              <div class="feedback__container swiper-container">
+                <ul class="feedback__content-wrapper swiper-wrapper">
+                  <li class="feedback__slide swiper-slide">
+                    <div class="feedback__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-frolov-mobile.webp    1x,
+                            img/content/feedback/feedback-frolov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-frolov-tablet.webp    1x,
+                            img/content/feedback/feedback-frolov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/feedback/feedback-frolov.webp    1x,
+                            img/content/feedback/feedback-frolov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-frolov-mobile.jpg    1x,
+                            img/content/feedback/feedback-frolov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-frolov-tablet.jpg    1x,
+                            img/content/feedback/feedback-frolov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/feedback/feedback-frolov.jpg"
+                          srcset="
+                            img/content/feedback/feedback-frolov@2x.jpg 2x
+                          "
+                          width="258"
+                          height="253"
+                          loading="lazy"
+                          alt="Фото участника похода Александра Фролова."
+                        />
+                      </picture>
+                    </div>
+                    <div class="feedback__info-wrapper">
+                      <p>
+                        Осенью ходили в&nbsp;поход на&nbsp;Алтай
+                        с&nbsp;друзьями. Впечатления потрясающие!
+                        Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash;
+                        всему научили, все показали. Делились увлекательными
+                        историями о&nbsp;местах, людях, культуре места.
+                      </p>
+                      <p>
+                        С&nbsp;уверенностью могу сказать, что жизнь разделилась
+                        на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда
+                        не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень
+                        рекомендую!
+                      </p>
+                      <h3>Фролов Александр</h3>
+                      <span>38&nbsp;лет, Москва</span>
+                    </div>
+                  </li>
+                  <li class="feedback__slide swiper-slide">
+                    <div class="feedback__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-solovyov-mobile.webp    1x,
+                            img/content/feedback/feedback-solovyov-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-solovyov-tablet.webp    1x,
+                            img/content/feedback/feedback-solovyov-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/feedback/feedback-solovyov.webp    1x,
+                            img/content/feedback/feedback-solovyov@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-solovyov-mobile.jpg    1x,
+                            img/content/feedback/feedback-solovyov-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-solovyov-tablet.jpg    1x,
+                            img/content/feedback/feedback-solovyov-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/feedback/feedback-solovyov.jpg"
+                          srcset="
+                            img/content/feedback/feedback-solovyov@2x.jpg 2x
+                          "
+                          width="258"
+                          height="253"
+                          loading="lazy"
+                          alt="Фото участника похода Ивана Соловьева."
+                        />
+                      </picture>
+                    </div>
+                    <div class="feedback__info-wrapper">
+                      <p>
+                        Хороший полноценный поход с&nbsp;разнообразными
+                        локациями. В&nbsp;начале дорога идет по&nbsp;лыжне,
+                        далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер
+                        и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века.
+                        Было очень интересно!
+                      </p>
+                      <p>
+                        Инструктор Федор дружелюбный, внимательный
+                        к&nbsp;технике безопасности и&nbsp;своим туристам. Всем
+                        советую этот тур.
+                      </p>
+                      <h3>Иван Соловьев</h3>
+                      <span>25&nbsp;лет, Владивосток</span>
+                    </div>
+                  </li>
+                  <li class="feedback__slide swiper-slide">
+                    <div class="feedback__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova-mobile.webp    1x,
+                            img/content/feedback/feedback-bazhenova-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova-tablet.webp    1x,
+                            img/content/feedback/feedback-bazhenova-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova.webp    1x,
+                            img/content/feedback/feedback-bazhenova@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova-mobile.jpg    1x,
+                            img/content/feedback/feedback-bazhenova-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova-tablet.jpg    1x,
+                            img/content/feedback/feedback-bazhenova-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/feedback/feedback-bazhenova.jpg"
+                          srcset="
+                            img/content/feedback/feedback-bazhenova@2x.jpg 2x
+                          "
+                          width="258"
+                          height="253"
+                          loading="lazy"
+                          alt="Фото участницы похода Евгении Баженовой."
+                        />
+                      </picture>
+                    </div>
+                    <div class="feedback__info-wrapper">
+                      <p>
+                        Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции.
+                        В&nbsp;первый день прошли около 30&nbsp;км, физически
+                        я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была
+                        уверена, пройду&nbsp;ли до&nbsp;конца.
+                        Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем
+                        ожидала, видимо организм уже привык.
+                      </p>
+                      <p>
+                        Спасибо ребятам, инструкторам за&nbsp;помощь
+                        и&nbsp;поддержку! Я&nbsp;была рада быть в&nbsp;такой
+                        компании.
+                      </p>
+                      <h3>Евгения Баженова</h3>
+                      <span>23&nbsp;года, Кострома</span>
+                    </div>
+                  </li>
+                  <li class="feedback__slide swiper-slide">
+                    <div class="feedback__image-wrapper">
+                      <picture>
+                        <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-pirogova-mobile.webp    1x,
+                            img/content/feedback/feedback-pirogova-mobile@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-pirogova-tablet.webp    1x,
+                            img/content/feedback/feedback-pirogova-tablet@2x.webp 2x
+                          "
+                        />
+                        <source
+                          type="image/webp"
+                          srcset="
+                            img/content/feedback/feedback-pirogova.webp    1x,
+                            img/content/feedback/feedback-pirogova@2x.webp 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                            img/content/feedback/feedback-pirogova-mobile.jpg    1x,
+                            img/content/feedback/feedback-pirogova-mobile@2x.jpg 2x
+                          "
+                        />
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                            img/content/feedback/feedback-pirogova-tablet.jpg    1x,
+                            img/content/feedback/feedback-pirogova-tablet@2x.jpg 2x
+                          "
+                        />
+                        <img
+                          src="img/content/feedback/feedback-pirogova.jpg"
+                          srcset="
+                            img/content/feedback/feedback-pirogova@2x.jpg 2x
+                          "
+                          width="258"
+                          height="253"
+                          loading="lazy"
+                          alt="Фото участницы похода Елены Пироговой."
+                        />
+                      </picture>
+                    </div>
+                    <div class="feedback__info-wrapper">
+                      <p>
+                        Это был опыт, изменивший мою жизнь! Думала,
+                        не&nbsp;справлюсь, но&nbsp;все получилось! Дух
+                        захватывает, когда наконец-то, преодолев все трудности
+                        и&nbsp;препятствия, взбираешься на&nbsp;вершину.
+                      </p>
+                      <p>
+                        У&nbsp;нас собралась потрясающая команда. Все друг друга
+                        поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе
+                        у&nbsp;костра и&nbsp;пели песни. Обязательно повторю
+                        такое приключение!
+                      </p>
+                      <h3>Елена Пирогова</h3>
+                      <span>37&nbsp;лет, Тюмень</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="feedback__buttons">
+                <button class="feedback__button feedback__button--prev" aria-label="Назад.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="feedback__button feedback__button--next" aria-label="Вперед.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advantages">
+          <div class="container">
+            <h2 data-content="Преимущества">Преимущества</h2>
+            <div class="advantages__container swiper-container">
+              <ul class="advantages__content-wrapper swiper-wrapper">
+                <li class="advantages__slide swiper-slide">
+                  <svg width="54" height="54">
+                    <use href="img/sprite.svg#icon-safety-border"></use>
+                  </svg>
+                  <h3>Безопасность и&nbsp;охрана</h3>
+                  <p>
+                    Уделяем внимание безопасности клиентов, внедряя строгие
+                    процедуры и&nbsp;протоколы безопасности. Имеем планы
+                    действий на&nbsp;случай непредвиденных обстоятельств
+                    и&nbsp;даем гарантию полной безопасности во&nbsp;время всего
+                    тура.
+                  </p>
+                </li>
+                <li class="advantages__slide swiper-slide">
+                  <svg width="54" height="54">
+                    <use href="img/sprite.svg#icon-examination-border"></use>
+                  </svg>
+                  <h3>Экспертиза и&nbsp;знания</h3>
+                  <p>
+                    Наша команда опытных гидов имеет обширные знания
+                    о&nbsp;местности, погодных условиях и&nbsp;технике
+                    безопасности. Это гарантирует, что наши клиенты находятся
+                    в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере
+                    насладиться опытом без опасений.
+                  </p>
+                </li>
+                <li class="advantages__slide swiper-slide">
+                  <svg width="54" height="54">
+                    <use href="img/sprite.svg#icon-equipment-border"></use>
+                  </svg>
+                  <h3>Оборудование и&nbsp;снаряжение</h3>
+                  <p>
+                    Мы&nbsp;предоставляем клиентам все необходимое оборудование,
+                    необходимое для путешествия. Это избавляет клиентов
+                    от&nbsp;необходимости покупать, брать с&nbsp;собой
+                    снаряжение, что делает путешествие более удобным
+                    и&nbsp;экономически выгодным.
+                  </p>
+                </li>
+                <li class="advantages__slide swiper-slide">
+                  <svg width="54" height="54">
+                    <use href="img/sprite.svg#icon-trails-border"></use>
+                  </svg>
+                  <h3>Индивидуальные маршруты</h3>
+                  <p>
+                    Предлагает широкий выбор туров, отвечающих различным уровням
+                    мастерства и&nbsp;интересам. Мы&nbsp;также можем
+                    адаптировать маршруты к&nbsp;вашим конкретным потребностям
+                    и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный
+                    опыт.
+                  </p>
+                </li>
+                <li class="advantages__slide swiper-slide">
+                  <svg width="54" height="54">
+                    <use href="img/sprite.svg#icon-leaf-border"></use>
+                  </svg>
+                  <h3>Бережное отношение к&nbsp;природе</h3>
+                  <p>
+                    Уделяем первостепенное внимание охране окружающей среды
+                    и&nbsp;гарантируем, что туры оказывают минимальное
+                    воздействие на&nbsp;природную среду. Наша компания следует
+                    принципу &laquo;Не&nbsp;оставлять следов&raquo;.
+                  </p>
+                </li>
+              </ul>
+              <div class="advantages__buttons">
+                <button class="advantages__button advantages__button--prev" aria-label="Назад.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="advantages__button advantages__button--next" aria-label="Вперед.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="advantages__background-wrapper advantages__background-wrapper--left"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/background/background-clouds-advantages-left.webp    1x,
+                  img/background/background-clouds-advantages-left@2x.webp 2x
+                "
+              />
+              <img
+                src="img/background/background-clouds-advantages-left.png"
+                srcset="
+                  img/background/background-clouds-advantages-left@2x.png 2x
+                "
+                width="705"
+                height="391"
+                alt="Фоновое изображение облаков."
+              />
+            </picture>
+          </div>
+          <div
+            class="advantages__background-wrapper advantages__background-wrapper--right"
+          >
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  img/background/background-clouds-advantages-right.webp    1x,
+                  img/background/background-clouds-advantages-right@2x.webp 2x
+                "
+              />
+              <img
+                src="img/background/background-clouds-advantages-right.png"
+                srcset="
+                  img/background/background-clouds-advantages-right@2x.png 2x
+                "
+                width="602"
+                height="263"
+                alt="Фоновое изображение облаков."
+              />
+            </picture>
+          </div>
+        </section>
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <div class="gallery__wrapper">
+              <h2 data-content="Фотогалерея">Фотогалерея</h2>
+              <p>
+                Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур,
+                а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии
+                украсят этот раздел нашего сайта.
+              </p>
+              <div class="gallery__buttons">
+                <button class="gallery__button gallery__button--prev" aria-label="Назад.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <button class="gallery__button gallery__button--next" aria-label="Вперед.">
+                  <svg width="13" height="8">
+                    <use href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="gallery__container swiper-container">
+            <ul class="gallery__content-wrapper swiper-wrapper">
+              <li class="gallery__slide swiper-slide">
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--vertical"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/traveller.webp    1x,
+                        img/content/gallery/traveller@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/traveller.jpg"
+                      srcset="img/content/gallery/traveller@2x.jpg 2x"
+                      width="275"
+                      height="449"
+                      loading="lazy"
+                      alt="Фото путешественника в горах."
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__slide swiper-slide">
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--horizontal"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/travellers-group.webp    1x,
+                        img/content/gallery/travellers-group@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/travellers-group.jpg"
+                      srcset="img/content/gallery/travellers-group@2x.jpg 2x"
+                      width="298"
+                      height="179"
+                      loading="lazy"
+                      alt="Фото группы путешественников у костра."
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--square"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/compass.webp    1x,
+                        img/content/gallery/compass@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/compass.jpg"
+                      srcset="img/content/gallery/compass@2x.jpg 2x"
+                      width="298"
+                      height="265"
+                      loading="lazy"
+                      alt="Фото компаса в руке."
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__slide swiper-slide">
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--vertical"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/trekking.webp    1x,
+                        img/content/gallery/trekking@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/trekking.jpg"
+                      srcset="img/content/gallery/trekking@2x.jpg 2x"
+                      width="272"
+                      height="449"
+                      loading="lazy"
+                      alt="Фото треккинга."
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__slide swiper-slide">
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--horizontal"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/trekking-another.webp    1x,
+                        img/content/gallery/trekking-another@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/trekking-another.jpg"
+                      srcset="img/content/gallery/trekking-another@2x.jpg 2x"
+                      width="298"
+                      height="179"
+                      loading="lazy"
+                      alt="Фото треккинга в условиях пониженной температуры."
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--square"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/tent.webp    1x,
+                        img/content/gallery/tent@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/tent.jpg"
+                      srcset="img/content/gallery/tent@2x.jpg 2x"
+                      width="298"
+                      height="265"
+                      loading="lazy"
+                      alt="Фото палатки под ночным небом."
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="gallery__slide swiper-slide">
+                <div
+                  class="gallery__image-wrapper gallery__image-wrapper--vertical"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/content/gallery/camp.webp    1x,
+                        img/content/gallery/camp@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="img/content/gallery/camp.jpg"
+                      srcset="img/content/gallery/camp@2x.jpg 2x"
+                      width="276"
+                      height="449"
+                      loading="lazy"
+                      alt="Фото путешественников на привале."
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="form">
+          <div class="container">
+            <div class="form__wrapper">
+              <h2>Остались вопросы?</h2>
+              <p>
+                Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для
+                консультации.
+              </p>
+              <div
+                class="form__container"
+                data-form-validate
+                data-callback="base"
+              >
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                  <fieldset class="form__fields">
+                    <div
+                      class="form__field-wrapper"
+                      data-validate-type="text"
+                      data-limitation="letters-and-hyphen"
+                      data-message-base="Введите свое имя"
+                      data-required
+                    >
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Как к вам обращаться?"
+                        minlength="1"
+                        aria-label="Введите имя."
+                        required
+                      />
+                    </div>
+                    <div
+                      class="form__field-wrapper"
+                      data-validate-type="phone"
+                      data-message-base="Введите номер телефона"
+                      data-required
+                    >
+                      <input
+                        type="tel"
+                        name="tel"
+                        placeholder="Телефон"
+                        aria-label="Введите номер телефона."
+                        required
+                      />
+                    </div>
+                  </fieldset>
+                  <button class="form__button btn" type="submit">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <div class="contacts__wrapper">
+              <div class="contacts__content-wrapper">
+                <h2 data-content="Контакты">Контакты</h2>
+                <p>
+                  Свяжитесь с&nbsp;нами любым удобным для вас способом или
+                  приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады
+                  поделиться увлекательными историями и&nbsp;подобрать для вас
+                  тур.
+                </p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <div class="contacts__image-wrapper">
+                      <svg width="26" height="26">
+                        <use href="img/sprite.svg#icon-tel"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts__text-wrapper">
+                      <h3>Телефон</h3>
+                      <a
+                        class="contacts__tel"
+                        href="tel:89837454545"
+                        aria-label="Позвонить в туристическую компанию LifeTour."
+                        >8&nbsp;983&nbsp;745&nbsp;45&nbsp;45</a
+                      >
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__image-wrapper">
+                      <svg width="26" height="26">
+                        <use href="img/sprite.svg#icon-email"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts__text-wrapper">
+                      <h3>E-mail</h3>
+                      <a
+                        class="contacts__email"
+                        href="mailto:info@lifetour.com"
+                        aria-label="Написать email в туристическую компанию LifeTour."
+                        >info@lifetour.com</a
+                      >
+                    </div>
+                  </li>
+                  <li class="contacts__item">
+                    <div class="contacts__image-wrapper">
+                      <svg width="26" height="26">
+                        <use href="img/sprite.svg#icon-address"></use>
+                      </svg>
+                    </div>
+                    <div class="contacts__text-wrapper">
+                      <h3>Адрес</h3>
+                      <address class="contacts__address">
+                        г.&nbsp;Москва, пр-т&nbsp;Мира, д.&nbsp;14,
+                        офис&nbsp;101
+                      </address>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts__map">
+                <div class="contacts__background-wrapper">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/background/background-map-mobile.webp    1x,
+                        img/background/background-map-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/background/background-map-tablet.webp    1x,
+                        img/background/background-map-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        img/background/background-map.webp    1x,
+                        img/background/background-map@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        img/background/background-map-mobile.png    1x,
+                        img/background/background-map-mobile@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/background/background-map-tablet.png    1x,
+                        img/background/background-map-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      src="img/background/background-map.png"
+                      srcset="img/background/background-map@2x.png 2x"
+                      width="585"
+                      height="324"
+                      alt="Карта местонахождения туристической компании LifeTour."
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="container">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__content-wrapper">
+              <a
+                class="main-footer__logo"
+                href="index.html"
+                aria-label="Переход на главную страницу сайта LifeTour."
+              >
+                <svg width="205" height="60">
+                  <use href="img/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#tours">Туры</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#train">Обучение</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#about">О&nbsp;нас</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#feedback">Отзывы</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#gallery">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="main-footer__phone-wrapper">
+                <a
+                  class="main-footer__phone"
+                  href="tel:88007253232"
+                  aria-label="Позвонить в туристическую компанию LifeTour."
+                  >8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a
+                >
+              </div>
+            </div>
+            <div class="main-footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="#"
+                    aria-label="Страница туристической компании Lifetour во VKontakte."
+                    target="_blank"
+                  >
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="#"
+                    aria-label="Страница туристической компании Lifetour в Одноклассниках."
+                    target="_blank"
+                  >
+                    <svg width="9" height="16">
+                      <use href="img/sprite.svg#icon-ok"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a
+                    class="social__link"
+                    href="#"
+                    aria-label="Страница туристической компании Lifetour на Reddit."
+                    target="_blank"
+                  >
+                    <svg width="14" height="15">
+                      <use href="img/sprite.svg#icon-reddit"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="main-footer__copyright">Политика конфиденциальности</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
