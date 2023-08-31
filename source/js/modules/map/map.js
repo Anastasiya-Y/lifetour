@@ -2,7 +2,7 @@ const mapContainer = document.querySelector('.contacts__map');
 
 // Options for the marker
 const iconOptions = {
-  iconUrl: '../img/svg/icon-marker.svg',
+  iconUrl: 'img/svg/icon-marker.svg',
   iconSize: [33, 44],
 };
 
