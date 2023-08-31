@@ -22,6 +22,20 @@
   line-height: 35px;
   text-align: center;
 
+  &::before {
+    content: attr(data-content);
+    position: absolute;
+    top: -17px;
+    left: 50%;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+
+    transform: translate(-50%);
+  }
+
   @include vp-1199 {
     font-size: 25px;
     line-height: 25px;
@@ -46,20 +60,6 @@
       font-size: 26px;
       line-height: 26px;
     }
-  }
-
-  &::before {
-    content: attr(data-content);
-    position: absolute;
-    top: -17px;
-    left: 50%;
-
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 55px;
-    color: rgba($color-elephant, 0.03);
-
-    transform: translate(-50%);
   }
 }
 

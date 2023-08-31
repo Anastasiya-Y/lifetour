@@ -66,6 +66,18 @@
   font-size: 35px;
   line-height: 35px;
 
+  &::before {
+    content: attr(data-content);
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+  }
+
   @include vp-1199 {
     margin-bottom: 35px;
 
@@ -92,18 +104,6 @@
       font-size: 26px;
       line-height: 26px;
     }
-  }
-
-  &::before {
-    content: attr(data-content);
-    position: absolute;
-    top: -17px;
-    left: 0;
-
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 55px;
-    color: rgba($color-elephant, 0.03);
   }
 }
 

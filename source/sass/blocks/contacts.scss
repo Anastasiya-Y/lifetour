@@ -2,7 +2,7 @@
   padding: 127px 0 103px 0;
 
   @include vp-1199 {
-    padding: 107px 0 69px 0;
+    padding: 88px 0 69px 0;
   }
 
   @include vp-767 {
@@ -43,6 +43,18 @@
   font-size: 35px;
   line-height: 35px;
 
+  &::before {
+    content: attr(data-content);
+    position: absolute;
+    top: -17px;
+    left: 0;
+
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 55px;
+    color: rgba($color-elephant, 0.03);
+  }
+
   @include vp-1199 {
     margin-bottom: 18px;
 
@@ -69,18 +81,6 @@
       font-size: 26px;
       line-height: 26px;
     }
-  }
-
-  &::before {
-    content: attr(data-content);
-    position: absolute;
-    top: -17px;
-    left: 0;
-
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 55px;
-    color: rgba($color-elephant, 0.03);
   }
 }
 
