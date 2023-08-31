@@ -2910,10 +2910,6 @@ button,
   position: relative;
 }
 
-.form__field-wrapper.is-invalid {
-  margin-bottom: 20px;
-}
-
 .form__field-wrapper.is-invalid input {
   border-color: #ff898f;
 }
@@ -3822,12 +3818,6 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.is-open .main-nav__list {
-  display: block;
-  padding: 31px 0 26px 0;
-  overflow: scroll;
 }
 
 .main-nav__item:not(:last-child) {
@@ -5024,6 +5014,10 @@ button,
     grid-template-columns: 1fr;
   }
 
+  .form__field-wrapper.is-invalid {
+    margin-bottom: 20px;
+  }
+
   .form__field-wrapper input {
     width: 100%;
     padding: 15px;
@@ -5244,6 +5238,12 @@ button,
     flex-direction: column;
   }
 
+  .is-open .main-nav__list {
+    display: block;
+    padding: 31px 0 26px 0;
+    overflow: scroll;
+  }
+
   .main-nav__item:not(:last-child) {
     margin: 0;
   }
@@ -5426,6 +5426,7 @@ button,
 
   .train__slide p {
     line-height: 18px;
+    margin: 0;
   }
 
   .train__buttons {
@@ -5971,6 +5972,7 @@ button,
   }
 
   .is-open .main-nav__list {
+    display: block;
     padding-top: 16px;
   }
 
@@ -6189,7 +6191,7 @@ button,
   }
 
   .train__slide {
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
   }
 
   .train__info-wrapper {
