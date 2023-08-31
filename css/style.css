@@ -2910,6 +2910,10 @@ button,
   position: relative;
 }
 
+.form__field-wrapper.is-invalid {
+  margin-bottom: 20px;
+}
+
 .form__field-wrapper.is-invalid input {
   border-color: #ff898f;
 }
@@ -3065,7 +3069,7 @@ button,
 }
 
 .gallery {
-  padding: 30px 0 1px 0;
+  padding: 30px 0 0 0;
 }
 
 .gallery__wrapper {
@@ -4393,7 +4397,7 @@ button,
 .train__instructors {
   position: relative;
   width: 1200px;
-  margin-bottom: 49px;
+  margin-bottom: 19px;
 }
 
 .train__container {
@@ -4402,7 +4406,7 @@ button,
 
 .train__content-wrapper {
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   list-style-type: none;
 }
 
@@ -4414,7 +4418,7 @@ button,
 }
 
 .train__instructors h3 {
-  margin: 0 90px 43px 0;
+  margin: 0 90px 13px 0;
 }
 
 .train__slide {
@@ -4835,7 +4839,7 @@ button,
   }
 
   .contacts {
-    padding: 107px 0 69px 0;
+    padding: 88px 0 69px 0;
   }
 
   .contacts__wrapper {
@@ -4977,7 +4981,8 @@ button,
   }
 
   .form {
-    padding: 25.41vw 0 21.32vw 0;
+    padding: 25.41vw 0 15vw 0;
+    min-height: 679px;
     background-image: url("../img/background/background-forest-tablet.png");
   }
 
@@ -5004,7 +5009,7 @@ button,
 
   .form__wrapper p {
     max-width: 300px;
-    margin: 0 3px 28px 0;
+    margin: 0 3px 29px 0;
   }
 
   .form__wrapper form {
@@ -5397,7 +5402,7 @@ button,
 
   .train__instructors {
     width: 100%;
-    margin-bottom: 44px;
+    margin-bottom: 14px;
   }
 
   .train h3 {
@@ -5407,12 +5412,12 @@ button,
   }
 
   .train__instructors h3 {
-    margin-bottom: 34px;
+    margin-bottom: 2px;
   }
 
   .train__slide {
     max-width: none;
-    padding: 13px 15px 15px 15px;
+    padding: 15px;
   }
 
   .train__info-wrapper {
@@ -5749,7 +5754,8 @@ button,
   }
 
   .form {
-    padding: 56.8vw 0 175px 0;
+    padding: 56.8vw 0 100px 0;
+    min-height: 621px;
     background-image: url("../img/background/background-forest-mobile.png");
   }
 
@@ -6170,7 +6176,7 @@ button,
   }
 
   .train__instructors {
-    margin-bottom: 39px;
+    margin-bottom: 8px;
   }
 
   .train h3 {
@@ -6178,8 +6184,12 @@ button,
     line-height: 16px;
   }
 
+  .train__instructors h3 {
+    margin-bottom: 3px;
+  }
+
   .train__slide {
-    padding: 19px 20px 20px 20px;
+    padding: 20px 20px 10px 20px;
   }
 
   .train__info-wrapper {
@@ -6249,6 +6259,10 @@ button,
     grid-row: 4/5;
   }
 
+  .train__learning-item:nth-child(4n+1) svg {
+    margin-top: 7px;
+  }
+
   .train__learning-item:nth-child(4n+1) {
     padding-right: 0;
   }
@@ -6259,10 +6273,6 @@ button,
     left: 10px;
     width: 1px;
     height: calc(100% + 25px);
-  }
-
-  .train__learning-item:nth-child(4n+1) svg {
-    margin-top: 7px;
   }
 
   .train__learning-item:nth-child(4n+2)::after {
