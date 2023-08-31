@@ -140,7 +140,9 @@
   position: relative;
 
   &.is-invalid {
-    margin-bottom: 20px;
+    @include vp-1199 {
+      margin-bottom: 20px;
+    }
   }
 
   &.is-invalid input {
