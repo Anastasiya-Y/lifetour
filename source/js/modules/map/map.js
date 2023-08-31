@@ -21,6 +21,10 @@ const getIconOptions = () => {
 
 
 const createMap = () => {
+  if (!mapContainer) {
+    return;
+  }
+
   const map = L.map(mapContainer, {scrollWheelZoom: false}).setView([55.7748763, 37.6326415], 17);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {

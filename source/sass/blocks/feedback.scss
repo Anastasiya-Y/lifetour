@@ -50,7 +50,7 @@
   }
 
   &::before {
-    content: "Отзывы";
+    content: attr(data-content);
     position: absolute;
     top: -17px;
     left: 0;
