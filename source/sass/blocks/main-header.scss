@@ -86,12 +86,16 @@
 
   &:hover,
   &:focus {
+    color: $color-resolution-blue;
+
     svg {
       fill: $color-resolution-blue;
     }
   }
 
   &:active {
+    color: $color-navy-blue;
+
     svg {
       fill: $color-navy-blue;
     }
