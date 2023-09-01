@@ -55,4 +55,19 @@ function createIframe(id) {
   return iframe;
 }
 
-export {initVideo};
+const regenerateUrl = (url) => url.replace(/&autoplay=1/, '');
+
+const stopVideo = (element) => {
+  let containerElement = document.getElementById(element);
+
+  if (containerElement) {
+    let iframeTag = containerElement.querySelector('iframe');
+
+    if (iframeTag) {
+      let iframeSrc = iframeTag.src;
+      iframeTag.src = regenerateUrl(iframeSrc);
+    }
+  }
+};
+
+export {initVideo, stopVideo};

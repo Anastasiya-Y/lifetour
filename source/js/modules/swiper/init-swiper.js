@@ -1,4 +1,7 @@
+import {stopVideo} from '../video/init-video';
+
 const swiperContainerHero = document.querySelector('.hero__container');
+
 const swiperContainerTours = document.querySelector('.tours__container');
 const swiperContainerTrain = document.querySelector('.train__container');
 const swiperContainerFeedback = document.querySelector('.feedback__container');
@@ -19,6 +22,11 @@ const initSwiper = () => {
     loop: true,
     speed: 300,
     cssMode: true,
+    on: {
+      slideChange: () => {
+        stopVideo('hero__video-wrapper');
+      },
+    },
   });
 
   const swiperTours = new Swiper(swiperContainerTours, {
@@ -30,7 +38,7 @@ const initSwiper = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 10,
       },
       768: {
         slidesPerView: 2,
