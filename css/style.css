@@ -4536,6 +4536,7 @@ button,
   margin: 0;
   font-size: 12px;
   line-height: 16px;
+  max-width: none;
   grid-column: 1/-1;
 }
 
@@ -5471,8 +5472,10 @@ button,
   }
 
   .train__slide p {
-    line-height: 18px;
     margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: none;
   }
 
   .train__buttons {
@@ -5577,6 +5580,7 @@ button,
   }
 
   .train__learning-item p {
+    margin: 0;
     font-size: 14px;
     line-height: 22px;
   }
@@ -6251,6 +6255,9 @@ button,
 
   .train__slide p {
     margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    max-width: none;
   }
 
   .train__buttons {
@@ -6382,6 +6389,7 @@ button,
   }
 
   .train__learning-item p {
+    margin: 0;
     font-size: 12px;
     line-height: 18px;
   }
