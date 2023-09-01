@@ -3670,9 +3670,18 @@ button,
   margin: 4px 8px 0 -2px;
 }
 
+.main-header__toggle:hover,
+.main-header__toggle:focus {
+  color: #1c3374;
+}
+
 .main-header__toggle:hover svg,
 .main-header__toggle:focus svg {
   fill: #1c3374;
+}
+
+.main-header__toggle:active {
+  color: #0266c1;
 }
 
 .main-header__toggle:active svg {
@@ -4693,6 +4702,7 @@ button,
 
 .train__learning-item p {
   margin: 0;
+  max-width: none;
 }
 
 /* @mixin hover-focus {
@@ -5581,6 +5591,7 @@ button,
 
   .train__learning-item p {
     margin: 0;
+    max-width: none;
     font-size: 14px;
     line-height: 22px;
   }
@@ -6390,6 +6401,7 @@ button,
 
   .train__learning-item p {
     margin: 0;
+    max-width: none;
     font-size: 12px;
     line-height: 18px;
   }
