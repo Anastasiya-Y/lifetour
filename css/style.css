@@ -2641,6 +2641,16 @@ button,
   line-height: 18px;
 }
 
+.contacts__tel-wrapper,
+.contacts__email-wrapper,
+.contacts__address-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
 .contacts__tel,
 .contacts__email {
   -webkit-transition: all 0.3s ease;
@@ -2745,6 +2755,9 @@ button,
   gap: 30px;
   -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
 }
 
 .feedback__image-wrapper {
@@ -2914,18 +2927,6 @@ button,
   border-color: #ff898f;
 }
 
-.input-message {
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.input-message.is-invalid {
-  color: #ff898f;
-}
-
 .form__field-wrapper input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3023,6 +3024,26 @@ button,
 
 .form__field-wrapper input:focus {
   border-color: #1c3374;
+}
+
+.form__field-wrapper input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+
+.form__field-wrapper input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+
+.form__field-wrapper input:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+
+.form__field-wrapper input:focus::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+
+.form__field-wrapper input:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
 }
 
 .form__field-wrapper input:active {
@@ -3403,7 +3424,7 @@ button,
 
 .hero__photos-wrapper {
   position: absolute;
-  top: 21px;
+  top: 20px;
   left: 790px;
   width: 100%;
 }
@@ -3417,19 +3438,9 @@ button,
   left: 0;
 }
 
-.hero__photo--nature-wrapper img {
-  width: 266px;
-  height: 351px;
-}
-
 .hero__photo--traveller-wrapper {
-  top: 92px;
-  left: 134px;
-}
-
-.hero__photo--traveller-wrapper img {
-  width: 236px;
-  height: 312px;
+  top: 93px;
+  left: 133px;
 }
 
 .hero__audio-wrapper {
@@ -3736,14 +3747,32 @@ button,
   pointer-events: none;
 }
 
+.is-open .main-header__logo svg {
+  fill: #2d383f;
+}
+
+.is-open .main-header__logo:hover svg,
+.is-open .main-header__logo:focus svg {
+  fill: #1c3374;
+}
+
+.is-open .main-header__logo:active svg {
+  fill: #0266c1;
+}
+
+.is-open .main-header__logo:focus-visible {
+  outline: none;
+}
+
+.is-open .main-header__logo:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 .main-header__logo svg {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   fill: #ffffff;
-}
-
-.is-open .main-header__logo svg {
-  fill: #2d383f;
 }
 
 .main-header__phone-wrapper {
@@ -3801,7 +3830,7 @@ button,
   -ms-flex-order: 10;
   order: 10;
   width: 100%;
-  max-height: 100vh;
+  max-height: calc(100vh - 101px);
   overflow: auto;
 }
 
@@ -3905,18 +3934,14 @@ button,
 }
 
 .social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 15px;
 }
 
 .social__link {
@@ -4606,6 +4631,9 @@ button,
   gap: 30px;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
 }
 
 .train__learning-item {
@@ -4710,6 +4738,18 @@ button,
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx) {
   .form {
     background-image: url("../img/background/background-forest@2x.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__photo--nature-wrapper img {
+    width: 308px;
+    height: 407px;
+  }
+
+  .hero__photo--traveller-wrapper img {
+    width: 277px;
+    height: 366px;
   }
 }
 
@@ -5014,10 +5054,6 @@ button,
     grid-template-columns: 1fr;
   }
 
-  .form__field-wrapper.is-invalid {
-    margin-bottom: 20px;
-  }
-
   .form__field-wrapper input {
     width: 100%;
     padding: 15px;
@@ -5145,9 +5181,19 @@ button,
     height: 365px;
   }
 
+  .hero__photo--nature-wrapper img {
+    width: 266px;
+    height: 351px;
+  }
+
   .hero__photo--traveller-wrapper {
     top: 53px;
     left: 206px;
+  }
+
+  .hero__photo--traveller-wrapper img {
+    width: 236px;
+    height: 312px;
   }
 
   .hero__audio-wrapper {
@@ -6201,6 +6247,10 @@ button,
 
   .train__instructor-link {
     margin-right: 12px;
+  }
+
+  .train__slide p {
+    margin: 0;
   }
 
   .train__buttons {
