@@ -156,13 +156,13 @@
 
   &:hover,
   &:focus {
-    & svg {
+    svg {
       fill: $color-resolution-blue;
     }
   }
 
   &:active {
-    & svg {
+    svg {
       fill: $color-navy-blue;
     }
   }
@@ -175,6 +175,35 @@
     opacity: 0.1;
 
     pointer-events: none;
+  }
+
+  .is-open & {
+    svg {
+      fill: $color-elephant;
+    }
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $color-resolution-blue;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $color-navy-blue;
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.1;
+
+      pointer-events: none;
+    }
   }
 }
 
@@ -191,10 +220,6 @@
   @include vp-767 {
     width: 112px;
     height: 34px;
-  }
-
-  .is-open & {
-    fill: $color-elephant;
   }
 }
 

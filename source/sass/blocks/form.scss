@@ -139,27 +139,8 @@
 .form__field-wrapper {
   position: relative;
 
-  &.is-invalid {
-    @include vp-1199 {
-      margin-bottom: 20px;
-    }
-  }
-
   &.is-invalid input {
     border-color: $color-torch-red;
-  }
-}
-
-.input-message {
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-
-  font-size: 14px;
-  line-height: 22px;
-
-  &.is-invalid {
-    color: $color-torch-red;
   }
 }
 
@@ -214,6 +195,10 @@
 
   &:focus {
     border-color: $color-resolution-blue;
+
+    &::placeholder {
+      color: $color-transparent;
+    }
   }
 
   &:active {

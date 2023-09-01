@@ -188,6 +188,14 @@
   }
 }
 
+.contacts__tel-wrapper,
+.contacts__email-wrapper,
+.contacts__address-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
 .contacts__tel,
 .contacts__email {
   transition: all $trans-default;

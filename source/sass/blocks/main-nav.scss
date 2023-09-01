@@ -12,7 +12,7 @@
     display: block;
     order: 10;
     width: 100%;
-    max-height: 100vh;
+    max-height: calc(100vh - 101px);
     overflow: auto;
   }
 

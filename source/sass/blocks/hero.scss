@@ -309,7 +309,7 @@
 
 .hero__photos-wrapper {
   position: absolute;
-  top: 21px;
+  top: 20px;
   left: 790px;
 
   width: 100%;
@@ -338,13 +338,20 @@
 }
 
 .hero__photo--nature-wrapper img {
-  width: 266px;
-  height: 351px;
+  @include vp-1200 {
+    width: 308px;
+    height: 407px;
+  }
+
+  @include vp-1199 {
+    width: 266px;
+    height: 351px;
+  }
 }
 
 .hero__photo--traveller-wrapper {
-  top: 92px;
-  left: 134px;
+  top: 93px;
+  left: 133px;
 
   @include vp-1199 {
     top: 53px;
@@ -353,8 +360,15 @@
 }
 
 .hero__photo--traveller-wrapper img {
-  width: 236px;
-  height: 312px;
+  @include vp-1200 {
+    width: 277px;
+    height: 366px;
+  }
+
+  @include vp-1199 {
+    width: 236px;
+    height: 312px;
+  }
 }
 
 .hero__audio-wrapper {
