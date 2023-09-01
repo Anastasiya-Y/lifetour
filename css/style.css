@@ -3887,7 +3887,7 @@ button,
 .main-nav__link::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
   width: 100%;
   height: 1px;
@@ -4071,7 +4071,8 @@ button,
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 380px;
-  height: 412px;
+  min-height: 412px;
+  height: auto;
   padding: 28px 20px;
   color: #ffffff;
   background-color: #527490;
@@ -4102,9 +4103,18 @@ button,
   opacity: 0.6;
 }
 
+.tours__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: none;
+}
+
 .tours__text {
   position: relative;
   z-index: 2;
+  margin-top: 178px;
 }
 
 .tours__info-wrapper {
@@ -4772,12 +4782,12 @@ button,
 
   .tours__slide {
     width: 30.55vw;
-    height: 33.22vw;
+    min-height: 33.22vw;
   }
 
   .tours__image-wrapper img {
     width: 30.55vw;
-    height: 33.22vw;
+    min-height: 33.22vw;
   }
 }
 
@@ -5318,6 +5328,15 @@ button,
     letter-spacing: 0.04em;
   }
 
+  .main-header .main-nav__link:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .main-header .main-nav__link:hover::before {
+    background-color: #2d383f;
+  }
+
   .main-header .main-nav__link:focus {
     -webkit-box-shadow: inset 0 0 0 1px #2d383f;
     box-shadow: inset 0 0 0 1px #2d383f;
@@ -5361,15 +5380,12 @@ button,
 
   .tours__slide {
     width: 42.19vw;
-    height: 53.65vw;
+    min-height: 53.65vw;
   }
 
   .tours__image-wrapper img {
     width: 100%;
-    max-width: none;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    min-height: 100%;
   }
 
   .tours__info-wrapper {
@@ -6086,7 +6102,7 @@ button,
 
   .tours__slide {
     width: 100%;
-    height: 128.75vw;
+    min-height: 128.75vw;
   }
 
   .tours__slide--black-sea .tours__place {
@@ -6095,12 +6111,16 @@ button,
 
   .tours__image-wrapper {
     width: 100%;
-    height: 128.75vw;
+    min-height: 128.75vw;
   }
 
   .tours__image-wrapper img {
     width: 100%;
-    height: 128.75vw;
+    min-height: 128.75vw;
+  }
+
+  .tours__text {
+    margin-top: 162px;
   }
 
   .tours__info-wrapper {
