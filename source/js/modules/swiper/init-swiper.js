@@ -1,7 +1,7 @@
 import {stopVideo} from '../video/init-video';
+import {stopAudio} from '../audio/init-audio';
 
 const swiperContainerHero = document.querySelector('.hero__container');
-
 const swiperContainerTours = document.querySelector('.tours__container');
 const swiperContainerTrain = document.querySelector('.train__container');
 const swiperContainerFeedback = document.querySelector('.feedback__container');
@@ -25,6 +25,7 @@ const initSwiper = () => {
     on: {
       slideChange: () => {
         stopVideo('hero__video-wrapper');
+        stopAudio('.hero__audio-wrapper');
       },
     },
   });
