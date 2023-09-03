@@ -5292,6 +5292,10 @@ button,
     padding-top: 0;
   }
 
+  .is-open .main-nav {
+    max-height: calc(100vh - 85px);
+  }
+
   .main-footer .main-nav {
     display: block;
     padding: 2px 0 0 0;
@@ -6010,7 +6014,7 @@ button,
   .is-open .main-header__wrapper {
     width: calc(100% + 30px);
     margin: -15px 0 0 -15px;
-    padding: 15px 15px 14px 15px;
+    padding: 15px 15px 14px 10px;
   }
 
   .main-header__toggle {
@@ -6018,7 +6022,7 @@ button,
   }
 
   .is-open .main-header__toggle {
-    margin: -1px 0 0 -7px;
+    margin: -1px 0 0 -2px;
   }
 
   .main-header__logo {
