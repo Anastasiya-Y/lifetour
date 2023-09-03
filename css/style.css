@@ -2746,6 +2746,10 @@ button,
 }
 
 .feedback__slide {
+  height: auto;
+}
+
+.feedback__card {
   display: -ms-grid;
   display: grid;
   height: auto;
@@ -4997,7 +5001,7 @@ button,
     line-height: 40px;
   }
 
-  .feedback__slide {
+  .feedback__card {
     padding: 20px 30px 15px 20px;
   }
 
@@ -5670,7 +5674,7 @@ button,
   }
 
   .advantages {
-    padding: 53px 0 38px 0;
+    padding: 35px 0 38px 0;
   }
 
   .advantages h2 {
@@ -5799,9 +5803,9 @@ button,
     line-height: 26px;
   }
 
-  .feedback__slide {
-    padding: 19px 20px 6px 20px;
-    gap: 10px;
+  .feedback__card {
+    padding: 20px 20px 15px 20px;
+    gap: 18px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
