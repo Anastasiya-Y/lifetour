@@ -118,7 +118,7 @@
   }
 
   @include vp-767 {
-    gap: 28px;
+    gap: 30px;
     grid-template-columns: 1fr;
   }
 }
@@ -181,7 +181,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 
     font-size: 14px;
     line-height: 14px;
@@ -239,7 +239,7 @@
   font-style: normal;
 
   @include vp-767 {
-    margin: 8px 70px 0 0;
+    margin: 0 70px 0 0;
   }
 }
 
