@@ -9,13 +9,13 @@ function initAudio() {
 }
 
 function createAudio(audio) {
-  const iframe = createIframe();
+  const iframe = createIframeAudio();
 
   audio.appendChild(iframe);
-  audio.classList.add('audio-wrapper--is-enabled');
+  audio.classList.add('hero__audio-wrapper--is-enabled');
 }
 
-function createIframe() {
+function createIframeAudio() {
   const iframe = document.createElement('iframe');
 
   iframe.classList.add('hero__audio');
@@ -27,15 +27,17 @@ function createIframe() {
 }
 
 const stopAudio = (element) => {
-  let containerElement = document.querySelector(element);
+  let containerElements = document.querySelectorAll(element);
 
-  if (containerElement) {
-    let iframeTag = containerElement.querySelector('.hero__audio');
+  if (containerElements) {
+    containerElements.forEach((containerElement) => {
+      let iframeTag = containerElement.querySelector('iframe');
 
-    if (iframeTag) {
-      let iframeSrc = iframeTag.src;
-      iframeTag.src = iframeSrc;
-    }
+      if (iframeTag) {
+        iframeTag.remove();
+        createAudio(containerElement);
+      }
+    });
   }
 };
 

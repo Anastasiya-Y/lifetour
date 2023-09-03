@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {checkBreakpoint} from './modules/swiper/init-swiper-advantages';
-import {initSwiper} from './modules/swiper/init-swiper';
 import {initVideo} from './modules/video/init-video';
 import {initAudio} from './modules/audio/init-audio';
+import {initSwiper} from './modules/swiper/init-swiper';
 import {createMap} from './modules/map/map';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/burger/burger';
@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+
 
   // Modules
   // ---------------------------------

@@ -59,6 +59,7 @@ const regenerateUrl = (url) => url.replace(/&autoplay=1/, '');
 
 const stopVideo = (element) => {
   let containerElement = document.getElementById(element);
+  let slides = document.querySelectorAll('.hero__slide');
 
   if (containerElement) {
     let iframeTag = containerElement.querySelector('iframe');
